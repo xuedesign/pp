@@ -1,0 +1,38 @@
+/**********************************************************************************************
+
+	Title: CSS for xuedeisgn
+	Author: Elmo Wu (by xuedesign studio)
+	Build: v1
+	Date: 2013/03
+
+***********************************************************************************************
+		1 通用
+		2 首頁
+		    2.1 頂端區塊
+			2.2 主選單設定
+			2.3 Banner 區塊
+			2.4 最新消息
+			2.5 最新商品
+			2.6 完美底部佈局
+			2.7 版權列區塊 
+***********************************************************************************************/
+
+/* 1. 通用 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+body{
+	margin: 0;
+	padding:0;
+	background: url(../images/bg_website.png) repeat-x;
+	font-family:/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/ Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:22px;
+	color:#5c5c5c}
+a:link {text-decoration:none; color:#30aec7}
+a:visited {text-decoration:none; color:#969f8a}
+a:hover {text-decoration:underline; color:#F50}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
