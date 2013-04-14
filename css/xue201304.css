@@ -3,18 +3,17 @@
 	Title: CSS for xuedeisgn
 	Author: Elmo Wu (by xuedesign studio)
 	Build: v1
-	Date: 2013/03
+	Date: 2013/04
 
 ***********************************************************************************************
 		1 通用
 		2 首頁
-		    2.1 頂端區塊
-			2.2 主選單設定
-			2.3 Banner 區塊
-			2.4 最新消息
-			2.5 最新商品
-			2.6 完美底部佈局
-			2.7 版權列區塊 
+		    2.1 頁首
+			2.2 Banner
+			2.3 服務介紹
+			2.4 我們的夥伴
+			2.5 完美底部佈局
+			2.6 頁尾
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -24,15 +23,96 @@ body{
 	margin: 0;
 	padding:0;
 	background: url(../images/bg_website.png) repeat-x;
-	font-family:/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/ Arial, Helvetica, sans-serif;
+	font-family: Verdana, Geneva, sans-serif/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/;
 	font-size:100%;
 	line-height:22px;
-	color:#5c5c5c}
-a:link {text-decoration:none; color:#30aec7}
-a:visited {text-decoration:none; color:#969f8a}
+	color:#434242}
+a:link {text-decoration:none; color:#3074b1}
+a:visited {text-decoration:none; color:#9b9c9b}
 a:hover {text-decoration:underline; color:#F50}
 form{margin:0; padding:0}
 image{border:0}
+.clean{clear:both}
+.hidden{display:none}
 
-.clean{ clear:both}
-.hidden{ display:none}
+/* 2. 首頁 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#wrap{display:block; width:994px; margin:0 auto}
+
+/*2.1 頁首---------------------------*/
+header{ display:block; width:962pa; padding:20px 16px 0 16px;}
+header h1 a{
+	display:block;
+	float:left;
+	background:url(../images/logo.png) no-repeat;
+	width:227px;
+	height:61px;
+	text-indent:-9999px;
+	margin-top:3px;
+	padding-left:15px;}
+header h2{ display:none}
+#top_right{	display:block; float:right; width:720px}	
+#top_login{ text-align:right; color:#376585}
+#top_login .btn_addnew, #top_login .btn_login{
+	display: inline-block;
+	font-size:0.813em;
+	color:#FFF;
+	padding:0 15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+#top_login .btn_addnew{ background:#f19092}
+#top_login .btn_login{ background:#93a084}
+#top_login .btn_addnew:hover, #top_login .btn_login:hover{ background:#3074b1; text-decoration:none}
+#top_right nav{ padding-top:18px;}
+#top_right nav li{ float:left;}
+#top_right nav li .nav_01, #top_right nav li .nav_02, #top_right nav li .nav_03, #top_right nav li .nav_04, #top_right nav li .nav_05, #top_right nav li .nav_06{ display: block; float:left; height:21px; text-indent:-9999px}
+#top_right nav li .nav_01{ width:142px; background:url(../images/bg_nav.png) no-repeat}
+#top_right nav li .nav_01:hover, #top_right nav li .nav_01.navin{ background:url(../images/bg_nav.png) 0 -21px no-repeat}
+#top_right nav li .nav_02{ width:121px; background:url(../images/bg_nav.png) 0 -42px no-repeat}
+#top_right nav li .nav_02:hover, #top_right nav li .nav_02.navin{ background:url(../images/bg_nav.png) 0 -63px no-repeat}
+#top_right nav li .nav_03{ width:133px; background:url(../images/bg_nav.png) 0 -84px no-repeat}
+#top_right nav li .nav_03:hover, #top_right nav li .nav_03.navin{ background:url(../images/bg_nav.png) 0 -105px no-repeat}
+#top_right nav li .nav_04{ width:118px; background:url(../images/bg_nav.png) 0 -126px no-repeat}
+#top_right nav li .nav_04:hover, #top_right nav li .nav_04.navin{ background:url(../images/bg_nav.png) 0 -147px no-repeat}
+#top_right nav li .nav_05{ width:109px; background:url(../images/bg_nav.png) 0 -168px no-repeat}
+#top_right nav li .nav_05:hover, #top_right nav li .nav_05.navin{ background:url(../images/bg_nav.png) 0 -189px no-repeat}
+#top_right nav li .nav_06{ width:96px; background:url(../images/bg_nav.png) 0 -210px no-repeat}
+#top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav.png) 0 -231px no-repeat}
+
+/*2.5 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}
+#main_content{padding-bottom:61px}
+.clearfix:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;} /* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;} /* End hide from IE-mac */
+
+/*2.6 頁尾--------------------------*/
+footer{
+	clear:both;
+	display:block;
+	position: relative;
+	width:100%;
+	height:61px;
+	background:url(../images/bg_footer.jpg) repeat-x;
+	margin-top: -61px}
+#down_block{ 
+    display:block; 
+	width:962px; 
+	padding:20px 16px 0 16px;
+	margin:0 auto; 
+	font-size:0.813em;
+	color:#656363}
+.down_left{ display:block; float:left}
+.down_right{ display:block; float:right}
+.down_right li{ float:left}
+
+
