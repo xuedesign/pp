@@ -41,7 +41,7 @@ image{border:0}
 #wrap{display:block; width:994px; margin:0 auto}
 
 /*2.1 頁首---------------------------*/
-header{ display:block; width:962pa; padding:20px 16px 0 16px;}
+header{ display:block; width:962px; padding:20px 16px 0 16px;}
 header h1 a{
 	display:block;
 	float:left;
@@ -53,10 +53,9 @@ header h1 a{
 	padding-left:15px;}
 header h2{ display:none}
 #top_right{	display:block; float:right; width:720px}	
-#top_login{ text-align:right; color:#376585}
+#top_login{ font-size:0.813em; text-align:right; color:#376585}
 #top_login .btn_addnew, #top_login .btn_login{
 	display: inline-block;
-	font-size:0.813em;
 	color:#FFF;
 	padding:0 15px;
 	border-radius:10px;
@@ -80,6 +79,102 @@ header h2{ display:none}
 #top_right nav li .nav_05:hover, #top_right nav li .nav_05.navin{ background:url(../images/bg_nav.png) 0 -189px no-repeat}
 #top_right nav li .nav_06{ width:96px; background:url(../images/bg_nav.png) 0 -210px no-repeat}
 #top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav.png) 0 -231px no-repeat}
+
+/*2.2 Banner---------------------------*/
+#mid_block{ display:block; width:962px; padding:49px 16px 0 16px}
+#bannerbox{ display:block; position:relative; width:869px; height:374px; margin:0 auto}
+#bannerbox h3{ display:none}
+#banner_btn{
+	display:block;
+	position:absolute;
+	width:151px;
+	height:18px;
+	top:327px;
+	left:359px;
+	z-index:200;
+	text-indent:-9999px}
+#banner_btn a{
+	display:block;
+	float:left;
+	width:14px;
+	height:14px;
+	background: url(../images/btn_banner.png) 0 -14px no-repeat;
+	margin:0 8px}
+#banner_btn a.activeSlide, #banner_btn a:hover{ background: url(../images/btn_banner.png) no-repeat}
+#banner_main{
+	display:block; 
+	position:absolute; 
+	width:869px; 
+	height:355px; 
+	background:#FFF; 
+	top:0; 
+	left:0; 
+	z-index:99; 
+	overflow:hidden}
+#gray_box{
+	display:block; 
+	position:absolute; 
+	background: url(../images/bg_bannerbox.jpg) no-repeat; 
+	width:869px; 
+	height:19px; 
+	top:355px; 
+	left:0}
+#social_box{ display:block; width:869px; margin:0 auto}
+.btn_fb, .btn_gplus, .btn_twitter{ display:block; float:right}
+.btn_gplus, .btn_twitter{ width:70px; margin:0; padding:0}
+
+/*2.3 服務介紹---------------------------*/
+#service_box, #partner_box{ display:block; width:962px; margin:0 auto}
+#service_box{padding-bottom:45px}
+.service_info{
+	display:block;
+	float:left;
+	width:320px;
+	background: url(../images/pic_symbol.png) no-repeat;
+	padding-left:200px}
+.service_info h3, #partner_box h3{ font-size:1.375em; font-weight:normal; color:#3074b1}	
+.service_info h3{ padding:10px 0 15px 0}
+.service_info p{ font-size:0.75em; color:#8c8b8b; line-height:22px}
+.blog_list{
+	display:block;
+	float:right;
+	width:252px;
+	background:url(../images/pic_skylock.png) 283px 75px no-repeat;
+	padding:48px 150px 0 40px;}
+.blog_list li{
+	display:block;
+	font-size:0.813em;
+	line-height:22px;
+	padding:0 0 8px 23px;
+	background:url(../images/icon_star.png) 0 2px no-repeat}
+
+/*2.4 我們的夥伴---------------------------*/	
+#partner_box{padding-bottom:20px}
+#partner_box h3{ float:left; padding-left:15px}
+.usage_note{ display:block; float:right; width:752px; border-bottom:1px solid #c0c0c0}
+.usage_note li{ 
+    float:right;
+	font-size:0.813em; 
+	margin-left:15px;
+	padding-left:20px;
+	background:url(../images/icon_bluepot.png) 0 5px no-repeat}
+.partner_list{ display:block; width:924px; padding:0 19px}
+.partner_list li{
+	display:block;
+	float:left;
+	height:80px;
+	padding:20px 42px 20px 0}
+.partner_list .btn_joinus{
+	display:block;
+	width:76px;
+	background:#f2f3f4;
+	padding:20px 0;
+	border:2px dashed #305b7b;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	text-align:center}
+.partner_list .btn_joinus:hover{ border:2px dashed #F50; text-decoration:none}			
 
 /*2.5 完美底部佈局---------------------------*/
 html, body, #wrap {height: 100%;}
@@ -114,5 +209,3 @@ footer{
 .down_left{ display:block; float:left}
 .down_right{ display:block; float:right}
 .down_right li{ float:left}
-
-

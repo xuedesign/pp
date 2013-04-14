@@ -10,8 +10,7 @@
 <title>Passpac Web</title>
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/xue201304.css" rel="stylesheet"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="/script/jquery.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -32,7 +31,7 @@
            <div id="top_login">
               <a href="content/account/join_us.html" title="Create New Accout" class="btn_addnew">Create New Accout</a> or
               <a href="content/account/login.html" title="login" class="btn_login">Login</a>
-              <!-- 登入後
+              <!-- 登入後狀態
               Hi! <a href="content/account/company_info.html" title="to my accout">QZ Tap</a>
               <a href="index.html" title="logout" class="btn_login">Logout</a>
               -->
@@ -52,17 +51,79 @@
      </header> 
      
      
+     
      <div id="mid_block">
-        <section>
+        <section id="bannerbox"><!-- banner輪播 -->
            <h3>banner</h3>
+                <div id="banner_btn"></div>
+                <div id="banner_main">
+                     <a href="#"><img src="images/pic_banner-01.jpg" width="869" height="355" alt="*" /></a>
+                     <a href="#"><img src="images/pic_banner-01.jpg" width="869" height="355" alt="*" /></a>
+                     <a href="#"><img src="images/pic_banner-01.jpg" width="869" height="355" alt="*" /></a>
+                     <a href="#"><img src="images/pic_banner-01.jpg" width="869" height="355" alt="*" /></a>
+                     <a href="#"><img src="images/pic_banner-01.jpg" width="869" height="355" alt="*" /></a>
+                </div>
+                <div id="gray_box"></div>
         </section>
-        <section>
-           <h3>service info</h3> 
+        
+        <section id="social_box"><!-- 社群按鈕 -->
+            <div class="btn_twitter">
+                 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="zh-tw" data-dnt="true">推文</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class="btn_gplus">
+                 <div class="g-plusone" data-size="medium"></div>
+                      <script type="text/javascript">
+                              (function() {
+                               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                               po.src = 'https://apis.google.com/js/plusone.js';
+                               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                      </script>
+            </div>
+            <div class="btn_fb">
+                 <iframe src="http://www.facebook.com/widgets/like.php?href=http://asia-learning.com&amp;layout=button_count" scrolling="no" frameborder="0" style="border:none; width:80px; height:22px" allowTransparency="true">
+                 </iframe>
+            </div>
+            <br class="clean" />
         </section>
-        <section>
-           <h3>my partner</h3>
+        
+        <section id="service_box"><!-- 網站介紹 -->
+          <div class="service_info">
+             <h3>Secure and Scalable</h3>
+             <p>Passpac state of the art technology is designed from the ground up to be worry free. Rest assured our modern cloud architecture and scalable infrastructure can handle even the heaviest loads. And our detailed field validation means your passes every time.</p>
+          </div>   
+           <ul class="blog_list">
+              <li><a href="http://www.qztap.com/2012/09/nfccard-emulation-mode.html" title="NFC Card Emulation mode application" rel="external">NFC Card Emulation mode application</a></li>
+              <li><a href="http://www.qztap.com/2012/09/paytageid.html" title="The PayTag and EID What is the difference?" rel="external">The PayTag and EID What is the difference?</a></li>
+              <li><a href="http://www.qztap.com/2012/08/qztap-news-eid.html" title="EID and Membership" rel="external">EID and Membership</a></li>
+           </ul>
+           <br class="clean" />
+        </section>
+        
+       <section id="partner_box"><!-- 客戶列表 -->
+           <h3>Business Partner</h3>
+           <ul class="usage_note">
+              <li><a href="content/account/teams_of_conditions.html" title="Teams of conditions">Teams of conditions</a></li>
+              <li><a href="content/account/usage_limitation.html" title="Usage Limitation">Usage Limitation</a></li>
+           </ul>
+          <ul class="partner_list">
+             <li><img src="images/pic_business-01.jpg" width="110" height="80" alt="mcdonalds"></li>
+             <li><img src="images/pic_business-02.jpg" width="78" height="80" alt="kfc"></li>
+             <li><img src="images/pic_business-03.jpg" width="96" height="80" alt="vieshow"></li>
+             <li><img src="images/pic_business-04.jpg" width="79" height="80" alt="7-11"></li>
+             <li><img src="images/pic_business-05.jpg" width="79" height="80" alt="starbucks"></li>
+             <li><img src="images/pic_business-06.jpg" width="83" height="80" alt="barista"></li>
+             <li><img src="images/pic_business-07.jpg" width="91" height="80" alt="cold stone"></li>
+             <li><img src="images/pic_business-08.jpg" width="140" height="80" alt="subway"></li>
+             <li><img src="images/pic_business-09.jpg" width="95" height="80" alt="mos burger"></li>
+             <li><img src="images/pic_business-10.jpg" width="95" height="80" alt="SHIN KONG MITSUKOSHI"></li>
+             <li><a href="content/account/join_us.html" title="join us" class="btn_joinus">Join Us</a></li> 
+          </ul>
+          <br class="clean" />
         </section>
      </div>
+     
      
      
   </div>   
@@ -85,6 +146,7 @@
   </div>  
 </footer>
 
-<script type="text/javascript" src="script/other_set.js"></script>
+<script src="script/jquery.cycle.js"></script><!--banner 輪播用-->
+<script src="script/other_set.js"></script>
 </body>
 </html>
