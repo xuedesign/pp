@@ -14,6 +14,8 @@
 			2.4 我們的夥伴
 			2.5 完美底部佈局
 			2.6 頁尾
+		3 票卡編輯
+		    3.1 票卡選擇	
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -209,3 +211,60 @@ footer{
 .down_left{ display:block; float:left}
 .down_right{ display:block; float:right}
 .down_right li{ float:left}
+
+/* 3. 票卡編輯 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#pass_about h3{ 
+  display:block;
+  height:24px;
+  text-indent:-9999px;
+  background:url(../images/bg_page-title.png) no-repeat}
+#pass_about p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
+
+/*3.1 票卡選擇---------------------------*/
+.pass_select, .pass_scope{ display:block; margin:0 auto}
+.pass_select{ width:955px}
+.pass_select h4, .pass_scope h4{ display:none}
+.pass_select li, .pass_scope li{ display:block; float:left}
+.pass_select li{width:167px}
+.spac-right{ padding-right:30px}
+.btn_select{
+	display:block;
+	width:90px;
+	height:36px;
+	background:url(../images/btn_select.png) no-repeat;
+	margin:10px 0 25px 50px;
+	text-indent:-9999px;
+	cursor:pointer}
+.btn_select:hover{background:url(../images/btn_select.png) 0 -46px no-repeat;}
+.pass_scope{
+	width:975px;
+	margin-bottom:40px;
+	background:url(../images/bg_passtype.png) repeat-x;
+	border:1px solid #d1d3d3;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+.pass_scope li{ width:166px}
+.pass_scope .line-glay{ border-right:1px solid #d1d3d3; height:280px}
+.pass_scope li h5{
+	display:block;
+	width:167px;
+	height:20px; 
+	text-indent:-9999px;
+	margin:15px auto 25px auto}
+.pass_scope .passtitle_01{ background:url(../images/title_passname.png) 58px 0 no-repeat}
+.pass_scope .passtitle_02{ background:url(../images/title_passname.png) 72px -20px no-repeat}
+.pass_scope .passtitle_03{ background:url(../images/title_passname.png) 75px -40px no-repeat}
+.pass_scope .passtitle_04{ background:url(../images/title_passname.png) 62px -60px no-repeat}
+.pass_scope .passtitle_05{ background:url(../images/title_passname.png) 62px -80px no-repeat}
+.pass_scope li li{ 
+   float:none;
+   font-size:0.813em;
+   line-height:22px;
+   color:#376585;
+   text-align:center;
+   margin:0 15px;
+   padding:5px 0;
+   border-bottom:1px dashed #cacccc}	
