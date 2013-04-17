@@ -12,6 +12,7 @@
 <!-- TemplateEndEditable -->
 <link href="../css/reset.css" rel="stylesheet">
 <link href="../css/xue201304.css" rel="stylesheet"/>
+<link href="../css/tooltipster.css" rel="stylesheet"/>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

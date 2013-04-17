@@ -49,4 +49,4 @@ $(function(){
 		}).find('a').focus(function(){
 			this.blur();
 		});
-	});	  
+	});

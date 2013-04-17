@@ -12,6 +12,7 @@
 <!-- InstanceEndEditable -->
 <link href="../../css/reset.css" rel="stylesheet">
 <link href="../../css/xue201304.css" rel="stylesheet"/>
+<link href="../../css/tooltipster.css" rel="stylesheet"/>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -96,17 +97,142 @@
 		        <div class="tab_container">
 			       <div id="tab1" class="tab_content">
 				        <h4>Edit Metadata</h4>
-				        
+				        <div class="note_bar">Be sure to save any editing actions.</div>
+                        <div class="box_input">
+                           <h5>Description</h5>
+                           <p>Provide a short description of your pass, which will be used by Apple for accessibility.</p>
+                           <div class="input_value">
+                             <span>Description</span>
+                             <input name="description" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
 			       </div>
-			       <div id="tab2" class="tab_content">
-				        <h4>Edit Appearance</h4>
-				        
-			      </div>
-                  <div id="tab3" class="tab_content"><h4>Edit Primary Fields</h4></div>
-                  <div id="tab4" class="tab_content"><h4>Edit Secondary Fields</h4></div>
-                  <div id="tab5" class="tab_content"><h4>Edit Barcode</h4></div>
-                  <div id="tab6" class="tab_content"><h4>Edit Back Fields</h4></div>
-                  <div id="tab7" class="tab_content"><h4>Edit Relevant Location &amp; Place</h4></div>
+                   
+			       <div id="tab2" class="tab_content"><h4>Edit Appearance</h4></div>
+                   
+                   <div id="tab3" class="tab_content">
+                        <h4>Edit Primary Fields</h4>
+                         <div class="note_bar">Optional field — Appears in the center over the strip image</div>
+                         <div class="box_input">
+                           <h5>Primary Field</h5>
+                           <p>The Primary field value appears in large text above the label.</p>
+                           <div class="input_value">
+                             <span>Label</span>
+                             <input name="Primary-Label" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Value</span>
+                             <input name="Primary-Value" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
+                   </div>
+                   
+                   <div id="tab4" class="tab_content">
+                       <h4>Edit Secondary Fields</h4>
+                       <div class="note_bar">Optional field — Appears on the left under the Strip Image</div>
+                       <div class="box_input">
+                           <h5>Secondary Field 1 of 2</h5>
+                           <p>Secondary fields and Auxiliary fields appear on the same line.</p>
+                           <div class="input_value">
+                             <span>Label</span>
+                             <input name="Sec_Left_Label" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Value</span>
+                             <input name="Sec_Left_value" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
+                        <div class="box_input">
+                           <h5>Secondary Field  2 of 2</h5>
+                           <p>Secondary fields and Auxiliary fields appear on the same line.</p>
+                           <div class="input_value">
+                             <span>Label</span>
+                             <input name="Sec_Right_Label" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Value</span>
+                             <input name="Sec_Right_Value" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
+                   </div>
+                   
+                   <div id="tab5" class="tab_content">
+                        <h4>Edit Barcode</h4>
+                        <div class="note_bar">Optional field — Appears at the bottom of the pass</div>
+                        <div class="box_input">
+                           <h5>Barcode</h5>
+                           <p>Apple recommends using the PDF417 format for aesthetic reasons.</p>
+                           <div class="input_value">
+                             <span>Value</span>
+                             <input name="Barcode_Value" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Alt Text</span>
+                             <input name="Barcode_Alt Text" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
+                   </div>
+                   
+                   <div id="tab6" class="tab_content">
+                        <h4>Edit Back Fields</h4>
+                        <div class="note_bar">Optional field — Appears on the back of the pass</div>
+                        <div class="box_input">
+                           <h5>Back Field</h5>
+                           <p>Back field content can be very long.</p>
+                           <div class="input_value">
+                             <span>Label</span>
+                             <input name="Back Field_Label" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Value</span>
+                             <input name="Back Field_Value" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set a value to appear on the pass.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                        </div>
+                   </div>
+                   
+                   <div id="tab7" class="tab_content">
+                        <h4>Edit Relevant Location &amp; Place</h4>
+                        <div class="note_bar">For Coupons you can specify up to 10 Relevant Locations with Relevant Text that will display on the customer's phone when they are close to a Relevant Location.</div>
+                        <div class="box_input">
+                           <h5>Relevant Location</h5>
+                           <p>Specify Relevant Location to display Relevant Text on a customer's phone at a specific location. Enter up to 10 locations.</p>
+                           <div class="input_value">
+                             <span>Address</span>
+                             <input name="Address" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Relevant location requires GPS coordinates. To find the coordinates for your location, start typing your address in the Address field, then click on your address in the dropdown menu.<br /><br />This action will select the proper coordinates and display them next to the Location title.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>
+                           <div class="input_value">
+                             <span>Relevant Text</span>
+                             <input name="Relevant Text" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Set the text that appears on the lockscreen when a passholder is near your location.<br/><br/><strong>Example:</strong> Store nearby on 3rd and Main.</p>">Help</a>
+                             <br class="clean" />
+                             <p class="sub_note">If left blank, the phone will say "Nearby" when the customer is near this location.</p> 
+                           </div>
+                        </div>
+                   </div>
 		      </div>
            </div>
          </div>
@@ -166,6 +292,13 @@
 		});
 	});	  
 </script>
+<script src="../../script/jquery.tooltipster.min.js"></script>
+<script>
+  $(document).ready(function() {
+     $('.tooltip').tooltipster();
+        });	
+</script>
+<script src="../../script/jquery.lazyload.js"></script>
 <script src="../../script/other_set.js"></script>
 <!-- InstanceEndEditable -->
 </body>
