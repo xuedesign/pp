@@ -15,7 +15,8 @@
 			2.5 完美底部佈局
 			2.6 頁尾
 		3 票卡編輯
-		    3.1 票卡選擇	
+		    3.1 票卡選擇
+			3.2 票卡編輯	
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -215,12 +216,13 @@ footer{
 /* 3. 票卡編輯 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#pass_about h3{ 
+#pass_about h3, .editop_left h3{ 
   display:block;
   height:24px;
-  text-indent:-9999px;
-  background:url(../images/bg_page-title.png) no-repeat}
-#pass_about p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
+  text-indent:-9999px}
+#pass_about h3{ background:url(../images/bg_page-title.png) no-repeat}
+.editop_left h3{ background:url(../images/bg_page-title.png) 0 -24px no-repeat}  
+#pass_about p, .editop_left p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
 
 /*3.1 票卡選擇---------------------------*/
 .pass_select, .pass_scope{ display:block; margin:0 auto}
@@ -267,4 +269,126 @@ footer{
    text-align:center;
    margin:0 15px;
    padding:5px 0;
-   border-bottom:1px dashed #cacccc}	
+   border-bottom:1px dashed #cacccc}
+/*3.2 票卡編輯---------------------------*/ 
+#pass_edit-top{ display:block; width:962px; /*padding-bottom:15px*/}
+.editop_left{ display:block; float:left; width:471px; padding-right:10px}
+.editop_right{ display:block; float:right; width:471px; padding-left:10px}
+.select_in{ 
+  display:block; 
+  float:left; 
+  margin-right:40px;
+  padding-right:30px;
+  border-right:1px solid #CCC}
+.select_other{ display:block; float:left}
+.select_in h4, .select_other h4{
+  display:block;
+  font-size:0.75em; 
+  padding:2px 8px; 
+  background:#64e7f2;
+  font-weight:normal;
+  border-radius:5px;
+  -moz-border-radius:5px; 
+  -webkit-border-radius:5px}
+.select_in h4{ width:55px}
+.select_other h4{ width:95px}
+.select_in a{ margin-left:8px}
+.select_other li{ float:left; margin-right:20px}
+.editop_right a.btn_pass-01, .editop_right a.btn_pass-02, .editop_right a.btn_pass-03, .editop_right a.btn_pass-04, 
+.editop_right a.btn_pass-05{ 
+   display:block; 
+   width:58px; 
+   height:63px;
+   text-indent:-9999px;
+   cursor:pointer;
+   margin-top:10px}
+.editop_right a.btn_pass-01{background: url(../images/btn_selectother.png) no-repeat}
+.editop_right a.btn_pass-01:hover, .editop_right .btn_pass-01.passin{ background: url(../images/btn_selectother.png) -58px 0 no-repeat}
+.editop_right a.btn_pass-02{background: url(../images/btn_selectother.png) 0 -63px no-repeat}
+.editop_right a.btn_pass-02:hover, .editop_right .btn_pass-02.passin{background: url(../images/btn_selectother.png) -58px -63px no-repeat}
+.editop_right a.btn_pass-03{background: url(../images/btn_selectother.png) 0 -126px no-repeat}
+.editop_right a.btn_pass-03:hover, .editop_right .btn_pass-03.passin{background: url(../images/btn_selectother.png) -58px -126px no-repeat}
+.editop_right a.btn_pass-04{background: url(../images/btn_selectother.png) 0 -189px no-repeat}
+.editop_right a.btn_pass-04:hover, .editop_right .btn_pass-04.passin{background: url(../images/btn_selectother.png) -58px -189px no-repeat}
+.editop_right a.btn_pass-05{background: url(../images/btn_selectother.png) 0 -252px no-repeat}
+.editop_right a.btn_pass-05:hover, .editop_right .btn_pass-05.passin{background: url(../images/btn_selectother.png) -58px -252px no-repeat}
+
+#pass_edit-main{
+	display:block;
+	width:926px;
+	background:#efefef;
+	margin-bottom:25px;
+	padding:18px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+.pass_tools{
+	display:block;
+	float:left;
+	position:relative;
+	width:586px;
+	padding-right:20px}
+.abgne_tab { 
+    clear: left;
+	display:block;
+	width: 586px;
+	margin: 28px 0 20px 0;
+	background:#FFF}
+.tabs{
+	width: 100%;
+	height:75px;
+	background: url(../images/bg_tabs.png) repeat-x}
+.tabs li a{
+	display:block;
+	float: left;
+	width:57px;
+	height: 75px;
+	text-indent:-9999px;
+	overflow: hidden;
+	position: relative;
+	margin:0 0 -1px 10px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */}
+.tabs li .tabicon_01{ background:url(../images/icon_toolbar.png) no-repeat}
+.tabs li .tabicon_01:hover, .tabs li.active .tabicon_01{ background:url(../images/icon_toolbar.png) -57px 0 no-repeat}
+.tabs li .tabicon_02{ background:url(../images/icon_toolbar.png) 0 -75px no-repeat}
+.tabs li .tabicon_02:hover, .tabs li.active .tabicon_02{ background:url(../images/icon_toolbar.png) -57px -75px no-repeat}
+.tabs li .tabicon_03{ background:url(../images/icon_toolbar.png) 0 -150px no-repeat}
+.tabs li .tabicon_03:hover, .tabs li.active .tabicon_03{ background:url(../images/icon_toolbar.png) -57px -150px no-repeat}
+.tabs li .tabicon_04{ background:url(../images/icon_toolbar.png) 0 -225px no-repeat}
+.tabs li .tabicon_04:hover, .tabs li.active .tabicon_04{ background:url(../images/icon_toolbar.png) -57px -225px no-repeat}
+.tabs li .tabicon_05{background:url(../images/icon_toolbar.png) 0 -300px no-repeat}
+.tabs li .tabicon_05:hover, .tabs li.active .tabicon_05{ background:url(../images/icon_toolbar.png) -57px -300px no-repeat}
+.tabs li .tabicon_06{background:url(../images/icon_toolbar.png) 0 -375px no-repeat}
+.tabs li .tabicon_06:hover, .tabs li.active .tabicon_06{ background:url(../images/icon_toolbar.png) -57px -375px no-repeat}
+.tabs li .tabicon_07{background:url(../images/icon_toolbar.png) 0 -450px no-repeat}
+.tabs li .tabicon_07:hover, .tabs li.active .tabicon_07{ background:url(../images/icon_toolbar.png) -57px -450px no-repeat}
+
+.tab_container {
+	clear: left;
+	display:block;
+	width: 100%;
+	background: #fff;}
+.tab_container .tab_content {padding: 20px}
+.tab_container .tab_content h2 {margin: 0 0 20px}
+	
+.pass_show{
+	display:block;
+	float:right;
+	width:320px}
+.pass_bg, .pass_mask-01, .pass_mask-02, .pass_mask-03, .pass_mask-04, .pass_mask-05{display:block; width:320px; height:480px}
+.pass_bg{ margin-bottom:20px}	
+.pass_mask-01{ background:url(../images/phoneframe-coupon.png) no-repeat}
+.pass_mask-02{ background:url(../images/phoneframe-event.png) no-repeat}
+.pass_mask-03{ background:url(../images/phoneframe-generic.png) no-repeat}
+.pass_mask-04{ background:url(../images/phoneframe-boarding.png) no-repeat}
+
+.btn_save, .btn_distribution{ 
+    display:block; 
+	float:left; 
+	width:147px; 
+	height:36px; 
+	text-indent:-9999px; 
+	cursor:pointer}
+.btn_save{ background:url(../images/btn_savesend.png) no-repeat; margin-left:5px}
+.btn_save:hover{ background:url(../images/btn_savesend.png) 0 -36px no-repeat}
+.btn_distribution{ background:url(../images/btn_savesend.png) 0 -72px no-repeat; margin-left:15px}
+.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -108px no-repeat}	  	
