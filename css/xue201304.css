@@ -399,7 +399,7 @@ footer{
 	line-height:22px; 
 	text-align:right; 
 	padding:10px 0 0 15px; 
-	font-weight:bold }
+	font-weight:bold}
 .input_value{ margin-bottom:20px}
 .box_input .textarea_01{
 	width:50%; 
@@ -420,6 +420,7 @@ footer{
 	
 .pass_show{
 	display:block;
+	position:relative;
 	float:right;
 	width:320px}
 .pass_bg, .pass_mask-01, .pass_mask-02, .pass_mask-03, .pass_mask-04, .pass_mask-05{display:block; width:320px; height:480px}
@@ -428,6 +429,54 @@ footer{
 .pass_mask-02{ background:url(../images/phoneframe-event.png) no-repeat}
 .pass_mask-03{ background:url(../images/phoneframe-generic.png) no-repeat}
 .pass_mask-04{ background:url(../images/phoneframe-boarding.png) no-repeat}
+.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode{ display:block; position:absolute}
+.coupon_top{
+	width:282px;
+	/*height:40px;*/
+	top:35px;
+	left:15px;
+	word-wrap: break-word; 
+	/*word-break: break-all;*/
+	overflow:hidden}
+.coupon_logo, .coupon_top h5{display: block; float:left}
+.coupon_top img{ padding-right:5px; vertical-align: sub}
+.coupon_top h5{ font-size:0.813em; line-height:35px}	
+.coupon_primary{
+	width:282px;
+	height:105px;
+	top:85px;
+	left:4px;
+	overflow:hidden;
+	padding:20px 15px 0;}
+.coupon_primary h4{ font-size:2.5em; line-height:1em; padding-bottom:15px}
+.coupon_primary p{ font-size:1em}	
+.coupon_secondary{
+	width:292px;
+	top:195px;
+	left:4px;
+	padding:20px 10px 0}
+.coupon_secondary h5, .coupon_secondary p{ font-size:0.813em}
+.coupon_secondary .secondary_01{ display:block; float:left; width:136px; padding-right:10px; overflow:hidden}	
+.pass_barcode{
+	width:128px;
+	height:137px;
+	padding:5px;
+	top:265px;
+	left:91px;
+	border:1px solid #a7a7a7; 
+	background:#FFF;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+.pass_barcode img{ margin-left:5px}
+.pass_barcode p{ 
+    display:block;
+	width:128px;
+	height:22px; 
+	font-size:0.75em; 
+	color:#666;;
+	text-align:center;
+	overflow:hidden}	
 
 .btn_save, .btn_distribution{ 
     display:block; 

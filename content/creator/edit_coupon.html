@@ -13,7 +13,7 @@
 <link href="../../css/reset.css" rel="stylesheet">
 <link href="../../css/xue201304.css" rel="stylesheet"/>
 <link href="../../css/tooltipster.css" rel="stylesheet"/>
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="../../script/jquery.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -110,7 +110,29 @@
                         </div>
 			       </div>
                    
-			       <div id="tab2" class="tab_content"><h4>Edit Appearance</h4></div>
+			       <div id="tab2" class="tab_content">
+                        <h4>Visual Appearance</h4>
+                        <div class="box_input">
+                           <h5>Upload Images</h5>
+                           <p>Upload your 2x sized images, and we'll create the 1x size and rename them for you.</p>
+                           <!--<div class="input_value">
+                             <span>Description</span>
+                             <input name="description" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>-->
+                        </div>
+                        <div class="box_input">
+                           <h5>Colors</h5>
+                           <p>Choose the colors for this pass. See PassTools Documentation for details on customizing pass colors.</p>
+                           <!--<div class="input_value">
+                             <span>Description</span>
+                             <input name="description" type="text" class="textarea_01">
+                             <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a>
+                             <br class="clean" /> 
+                           </div>-->
+                        </div>
+                   </div>
                    
                    <div id="tab3" class="tab_content">
                         <h4>Edit Primary Fields</h4>
@@ -120,13 +142,13 @@
                            <p>The Primary field value appears in large text above the label.</p>
                            <div class="input_value">
                              <span>Label</span>
-                             <input name="Primary-Label" type="text" class="textarea_01">
+                             <input name="Primary-Label" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Value</span>
-                             <input name="Primary-Value" type="text" class="textarea_01">
+                             <input name="Primary-Value" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
@@ -141,13 +163,13 @@
                            <p>Secondary fields and Auxiliary fields appear on the same line.</p>
                            <div class="input_value">
                              <span>Label</span>
-                             <input name="Sec_Left_Label" type="text" class="textarea_01">
+                             <input name="Sec_Left_Label" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Value</span>
-                             <input name="Sec_Left_value" type="text" class="textarea_01">
+                             <input name="Sec_Left_value" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
@@ -157,13 +179,13 @@
                            <p>Secondary fields and Auxiliary fields appear on the same line.</p>
                            <div class="input_value">
                              <span>Label</span>
-                             <input name="Sec_Right_Label" type="text" class="textarea_01">
+                             <input name="Sec_Right_Label" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Value</span>
-                             <input name="Sec_Right_Value" type="text" class="textarea_01">
+                             <input name="Sec_Right_Value" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
@@ -178,13 +200,13 @@
                            <p>Apple recommends using the PDF417 format for aesthetic reasons.</p>
                            <div class="input_value">
                              <span>Value</span>
-                             <input name="Barcode_Value" type="text" class="textarea_01">
+                             <input name="Barcode_Value" type="text" class="textarea_01" placeholder="required">
                              <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Alt Text</span>
-                             <input name="Barcode_Alt Text" type="text" class="textarea_01">
+                             <input name="Barcode_Alt Text" type="text" class="textarea_01" placeholder="optional">
                              <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
@@ -199,13 +221,13 @@
                            <p>Back field content can be very long.</p>
                            <div class="input_value">
                              <span>Label</span>
-                             <input name="Back Field_Label" type="text" class="textarea_01">
+                             <input name="Back Field_Label" type="text" class="textarea_01" placeholder="Default label (optional)">
                              <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Value</span>
-                             <input name="Back Field_Value" type="text" class="textarea_01">
+                             <textarea name="" cols="" rows="" class="textarea_01"></textarea>
                              <a href="#" class="tooltip btn_help" title="<p>Set a value to appear on the pass.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
@@ -220,13 +242,13 @@
                            <p>Specify Relevant Location to display Relevant Text on a customer's phone at a specific location. Enter up to 10 locations.</p>
                            <div class="input_value">
                              <span>Address</span>
-                             <input name="Address" type="text" class="textarea_01">
+                             <input name="Address" type="text" class="textarea_01" placeholder="輸入位置">
                              <a href="#" class="tooltip btn_help" title="<p>Relevant location requires GPS coordinates. To find the coordinates for your location, start typing your address in the Address field, then click on your address in the dropdown menu.<br /><br />This action will select the proper coordinates and display them next to the Location title.</p>">Help</a>
                              <br class="clean" /> 
                            </div>
                            <div class="input_value">
                              <span>Relevant Text</span>
-                             <input name="Relevant Text" type="text" class="textarea_01">
+                             <input name="Relevant Text" type="text" class="textarea_01" placeholder="Enter custom text to display on the phone">
                              <a href="#" class="tooltip btn_help" title="<p>Set the text that appears on the lockscreen when a passholder is near your location.<br/><br/><strong>Example:</strong> Store nearby on 3rd and Main.</p>">Help</a>
                              <br class="clean" />
                              <p class="sub_note">If left blank, the phone will say "Nearby" when the customer is near this location.</p> 
@@ -241,7 +263,30 @@
           <div class="pass_show"><!-- pass卡預覽區 -->
              <div class="pass_bg" style="background:#833604"><!-- [預覽]背景設定 -->
                 <div class="pass_mask-01">
-                
+                   <div class="coupon_top">
+                      <div class="coupon_logo"><!-- logo高度至多35px -->
+                        <img src="../../images/pic_logo-01.png" width="97" height="14" alt="*">
+                      </div>
+                      <h5 style="color:#FFD179">Logo-text</h5> 
+                   </div>
+                   <div class="coupon_primary" style="background:url(../../images/pic_Primary-01.jpg) no-repeat">
+                      <h4 style=" color:#FFF">#primary1</h4>
+                      <p style="color:#FFF">#primary1</p>
+                   </div>
+                   <div class="coupon_secondary">
+                      <div class="secondary_01">
+                         <h5 style="color:#FDC36E">#Sec_Left_value</h5>
+                         <p style="color:#FFF">#secondary1</p>
+                      </div>
+                      <div class="secondary_01">
+                         <h5 style="color:#FDC36E">#Sec_Right_value</h5>
+                         <p style="color:#FFF">#secondary2</p>
+                      </div> 
+                   </div>
+                   <div class="pass_barcode">
+                      <img src="../../images/pic_qrcode.jpg" width="117" height="117" alt="*">
+                      <p>OPTIONAL TEXT</p>
+                   </div>
                 </div>
              </div>
              
