@@ -211,6 +211,8 @@ footer{
 	font-size:0.813em;
 	color:#656363}
 .down_left{ display:block; float:left}
+.down_left a, .down_left a:visited{ color:#656363; text-decoration:none}
+.down_left a:hover{ text-decoration:underline; color:#F50}
 .down_right{ display:block; float:right}
 .down_right li{ float:left}
 

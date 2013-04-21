@@ -1,28 +1,28 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/edit_passtemp.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 <head>
 <meta charset="utf-8" lang="en">
 <meta name="description" content=""/>
 <meta name="keywords" content="passpac, pass, "/>
 <meta name="Author" content="QZ Tap inc." />
-<link rel="shortcut icon"  href="../../images/favicon.ico"/>
-<link rel="icon" href="../../images/favicon.ico"/>
-<!-- InstanceBeginEditable name="doctitle" -->
+<link rel="shortcut icon"  href="../images/favicon.ico"/>
+<link rel="icon" href="../images/favicon.ico"/>
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Passpac Web</title>
-<!-- InstanceEndEditable -->
-<link href="../../css/reset.css" rel="stylesheet">
-<link href="../../css/xue201304.css" rel="stylesheet"/>
-<link href="../../css/jquery.fancybox.css" rel="stylesheet"/>
-<link href="../../css/tooltipster.css" rel="stylesheet"/>
-<script src="../../script/jquery.min.js"></script>
+<!-- TemplateEndEditable -->
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/xue201304.css" rel="stylesheet"/>
+<link href="../css/jquery.fancybox.css" rel="stylesheet"/>
+<link href="../css/tooltipster.css" rel="stylesheet"/>
+<script src="../script/jquery.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if IE 6]>
 	<script src="http://letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
 <![endif]-->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 
 <body>
@@ -31,24 +31,24 @@
      
      
      <header>
-        <h1><a href="../../index.html" title="back to index">Passpac</a></h1>
+        <h1><a href="../index.html" title="back to index">Passpac</a></h1>
         <h2>NFC for SmartPhone</h2>
         <div id="top_right">
            <div id="top_login">
              <!-- 登入前狀態
               <a href="../content/account/join_us.html" title="Create New Accout" class="btn_addnew">Create New Accout</a> or
               <a href="../content/account/login.html" title="login" class="btn_login">Login</a>-->
-              Hi! <a href="content/account/company_info.html" title="to my accout">QZ Tap</a>
-              <a href="../../index.html" title="logout" class="btn_login">Logout</a>
+              Hi! <a href="../content/creator/content/account/company_info.html" title="to my accout">QZ Tap</a>
+              <a href="../index.html" title="logout" class="btn_login">Logout</a>
            </div>
          <nav>
           <ul>
-            <li><a href="../profile/What_PassPac.html" title="What's PassPac" class="nav_01">What's PassPac</a></li>
-            <li><a href="pass_select.html" title="Pass Creator" class="nav_02 navin">Pass Creator</a></li>
-            <li><a href="../account/pass_manager.html" title="Pass Manager" class="nav_03">Pass Manager</a></li>
-            <li><a href="../account/company_info.html" title="My Account" class="nav_04">My Account</a></li>
-            <li><a href="../mobile/app_info.html" title="Mobile APP" class="nav_05">Mobile APP</a></li>
-            <li><a href="../deal/nfc_deal.html" title="NFC Deal" class="nav_06">NFC Deal</a></li>
+            <li><a href="../content/profile/What_PassPac.html" title="What's PassPac" class="nav_01">What's PassPac</a></li>
+            <li><a href="../content/creator/pass_select.html" title="Pass Creator" class="nav_02 navin">Pass Creator</a></li>
+            <li><a href="../content/account/pass_manager.html" title="Pass Manager" class="nav_03">Pass Manager</a></li>
+            <li><a href="../content/account/company_info.html" title="My Account" class="nav_04">My Account</a></li>
+            <li><a href="../content/mobile/app_info.html" title="Mobile APP" class="nav_05">Mobile APP</a></li>
+            <li><a href="../content/deal/nfc_deal.html" title="NFC Deal" class="nav_06">NFC Deal</a></li>
           </ul>
           </nav>
           </div>
@@ -61,22 +61,22 @@
            <h3>Ticket Edit</h3>
            <p>Pass Builder is the most powerful and accurate visual tool for building Apple Passbook passes.</p>
         </div>
-        <!-- InstanceBeginEditable name="pass_select" -->
+        <!-- TemplateBeginEditable name="pass_select" -->
         <div class="editop_right">
           <div class="select_in">
             <h4>Selected</h4>
-            <a href="edit_coupon.html" title="Coupon" class="btn_pass-01 passin">Coupon</a> </div>
+            <a href="../content/creator/edit_coupon.html" title="Coupon" class="btn_pass-01 passin">Coupon</a> </div>
           <div class="select_other">
             <h4>Select Other</h4>
             <ul>
-              <li><a href="#box_outedit-02" class="btn_pass-02 fancybox">Event</a></li>
-              <li><a href="#box_outedit-03" class="btn_pass-03 fancybox">Store</a></li>
-              <li><a href="#box_outedit-04" class="btn_pass-04 fancybox">Generic</a></li>
-              <li><a href="#box_outedit-05" class="btn_pass-05 fancybox">Boarding</a></li>
+              <li><a href="../content/creator/edit_event.html" title="Event" class="btn_pass-02">Event</a></li>
+              <li><a href="../content/creator/edit_store.html" title="Store" class="btn_pass-03">Store</a></li>
+              <li><a href="../content/creator/edit_generic.html" title="Generic" class="btn_pass-04">Generic</a></li>
+              <li><a href="../content/creator/edit_boarding.html" title="Bboarding" class="btn_pass-05">Boarding</a></li>
             </ul>
           </div>
         </div>
-        <!-- InstanceEndEditable -->
+        <!-- TemplateEndEditable -->
         <br class="clean" />   
        </section>
        
@@ -84,7 +84,7 @@
           <div class="pass_tools"><!-- pass卡編輯區 -->
              <div class="abgne_tab">
 		        <ul class="tabs">
-		          <!-- InstanceBeginEditable name="pass_tools" -->
+		          <!-- TemplateBeginEditable name="pass_tools" -->
 		            <li><a href="#tab1" class="tabicon_01" title="Edit Metadata">Edit Metadata</a></li>
 		            <li><a href="#tab2" class="tabicon_02" title="Edit Appearance">Edit Appearance</a></li>
 		            <li><a href="#tab3" class="tabicon_03" title="Edit Primary Fields">Edit Primary Fields</a></li>
@@ -92,9 +92,9 @@
 		            <li><a href="#tab5" class="tabicon_05" title="Edit Barcode">Edit Barcode</a></li>
 		            <li><a href="#tab6" class="tabicon_06" title="Edit Back Fields">Edit Back Fields</a></li>
 		            <li><a href="#tab7" class="tabicon_07" title="Edit Relevant Location &amp; Place">Edit Relevant Location &amp; Place</a></li>
-	              <!-- InstanceEndEditable -->
+	              <!-- TemplateEndEditable -->
 	           </ul>
-		       <!-- InstanceBeginEditable name="pass_edit" -->
+		       <!-- TemplateBeginEditable name="pass_edit" -->
 		        <div class="tab_container">
 		          <div id="tab1" class="tab_content">
 		            <h4>Edit Metadata</h4>
@@ -114,7 +114,7 @@
 		              <h5>Upload Images</h5>
 		              <p>Upload your 2x sized images, and we'll create the 1x size and rename them for you.</p>
 		              <div class="input_value"> <span>Logo-text</span>
-		                <input id="input-logotext" name="input-logotext" type="text" class="textarea_01 input_note" placeholder="開始設計">
+		                <input id="input-logotext" name="input-logotext" type="text" class="textarea_01">
 		                <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a> <br class="clean" />
 	                  </div>
 	                </div>
@@ -223,21 +223,21 @@
 	                </div>
 	              </div>
 	            </div>
-	           <!-- InstanceEndEditable -->
+	           <!-- TemplateEndEditable -->
             </div>
          </div>
           
-          <!-- InstanceBeginEditable name="pass_show" -->
+          <!-- TemplateBeginEditable name="pass_show" -->
           <div class="pass_show"><!-- pass卡預覽區 -->
             <div class="pass_bg" style="background:#833604"><!-- [預覽]背景設定 -->
               <div class="pass_mask-01">
                 <div class="coupon_top">
                   <div class="coupon_logo">
                     <!-- logo高度至多35px -->
-                    <img src="../../images/pic_logo-01.png" alt="*" width="97" height="14"> </div>
-                  <h5 id="logo-text" style="color:#FFD179">開始設計</h5>
+                    <img src="../images/pic_logo-01.png" alt="*" width="97" height="14"> </div>
+                  <h5 id="logo-text" style="color:#FFD179">Logo-text</h5>
                 </div>
-                <div class="coupon_primary" style="background:url(../../images/pic_Primary-01.jpg) no-repeat">
+                <div class="coupon_primary" style="background:url(../images/pic_Primary-01.jpg) no-repeat">
                   <h4 style=" color:#FFF">#primary1</h4>
                   <p style="color:#FFF">#primary1</p>
                 </div>
@@ -251,32 +251,14 @@
                     <p style="color:#FFF">#secondary2</p>
                   </div>
                 </div>
-                <div class="pass_barcode"> <img src="../../images/pic_qrcode.jpg" width="117" height="117" alt="*">
+                <div class="pass_barcode"> <img src="../images/pic_qrcode.jpg" width="117" height="117" alt="*">
                   <p>OPTIONAL TEXT</p>
                 </div>
               </div>
             </div>
-            <a href="#box_save" class="btn_save fancybox">Save</a> 
-            <a href="#box_send" class="btn_distribution fancybox">Distribution</a> 
-            </div>
-            
-            <div id="box_outedit-02" style="width:400px;display: none;">
-		         <h3>注意！</h3>
-		         <p>目前資料尚未儲存，是否需要存檔再離開?</p>
-                 <a href="edit_event.html">不儲存，直接離開</a>
-                 <a href="#box_save" class="fancybox">是的，我要儲存</a>
-	       </div>
-            <div id="box_save" style="width:400px;display: none;">
-		         <h3>儲存資料</h3>
-		         <p>檔案名稱：</p>
-                 <a href="edit_coupon.html">儲存</a>
-	       </div>
-           <div id="box_send" style="width:400px;display: none;">
-		         <h3>發佈票卡</h3>
-		         <p></p>
-	       </div>
-           
-          <!-- InstanceEndEditable -->
+            <a href="#" title="Save" class="btn_save">Save</a> 
+            <a href="#" title="Distribution" class="btn_distribution">Distribution</a> </div>
+          <!-- TemplateEndEditable -->
           <br class="clean" />   
        </section>
      </div>
@@ -288,14 +270,14 @@
   <div id="down_block">
     <p class="down_left">&copy;2013 <a href="http://www.qztap.com/" title="Qztap Inc." rel="external">Qztap Inc.</a> All Rights Reserved.</p>
     <ul class="down_right">
-       <li><a href="../profile/What_PassPac.html" title="What's PassPac">What's PassPac</a>│</li>
-       <li><a href="pass_select.html" title="Pass Creator">Pass Creator</a>│</li>
-       <li><a href="../account/pass_manager.html" title="Pass Manager">Pass Manager</a>│</li>
-       <li><a href="../account/company_info.html" title="My Account">My Account</a>│</li>
-       <li><a href="../mobile/app_info.html" title="Mobile APP">Mobile APP</a>│</li>
-       <li><a href="../deal/nfc_deal.html" title="NFC Deal">NFC Deal</a>│</li>
-       <li><a href="../profile/faq.html" title="FAQ">FAQ</a>│</li>
-       <li><a href="../profile/contact.html" title="Contact us">Contact us</a>│</li>
+       <li><a href="../content/profile/What_PassPac.html" title="What's PassPac">What's PassPac</a>│</li>
+       <li><a href="../content/creator/pass_select.html" title="Pass Creator">Pass Creator</a>│</li>
+       <li><a href="../content/account/pass_manager.html" title="Pass Manager">Pass Manager</a>│</li>
+       <li><a href="../content/account/company_info.html" title="My Account">My Account</a>│</li>
+       <li><a href="../content/mobile/app_info.html" title="Mobile APP">Mobile APP</a>│</li>
+       <li><a href="../content/deal/nfc_deal.html" title="NFC Deal">NFC Deal</a>│</li>
+       <li><a href="../content/profile/faq.html" title="FAQ">FAQ</a>│</li>
+       <li><a href="../content/profile/contact.html" title="Contact us">Contact us</a>│</li>
        <li><a href="http://www.qztap.com/" title="Blog" rel="external">Blog</a></li>
     </ul>
   </div>  
@@ -318,15 +300,15 @@
 		});
 	});	  
 </script>
-<script src="../../script/pass_edit.js"></script><!-- 票卡編輯 -->
-<script src="../../script/jquery.tooltipster.min.js"></script><!-- 提示框 -->
+<script src="../script/pass_edit.js"></script><!-- 票卡編輯 -->
+<script src="../script/jquery.tooltipster.min.js"></script><!-- 提示框 -->
 <script>
   $(document).ready(function() {
      $('.tooltip').tooltipster();
         });		
 </script>
-<script src="../../script/jquery.placeholder.js"></script><!-- 輸入框提醒文字 -->
-<script src="../../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
+<script src="../script/jquery.placeholder.js"></script><!-- 輸入框提醒文字 -->
+<script src="../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
 <script type="text/javascript">
 		$(document).ready(function() {
 			$('.fancybox').fancybox();
@@ -388,7 +370,7 @@
          
 		 });
 	</script>
-<script src="../../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
-<script src="../../script/other_set.js"></script>
+<script src="../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
+<script src="../script/other_set.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+</html>

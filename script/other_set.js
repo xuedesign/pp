@@ -50,3 +50,8 @@ $(function(){
 			this.blur();
 		});
 	});
+	
+//輸入框提醒文字
+$(function(){
+	$('input[placeholder]').placeholder();
+ });
