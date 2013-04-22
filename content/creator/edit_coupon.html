@@ -113,21 +113,42 @@
 		            <div class="box_input">
 		              <h5>Upload Images</h5>
 		              <p>Upload your 2x sized images, and we'll create the 1x size and rename them for you.</p>
-		              <div class="input_value"> <span>Logo-text</span>
-		                <input id="input-logotext" name="input-logotext" type="text" class="textarea_01 input_note" placeholder="開始設計">
-		                <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a> <br class="clean" />
+                      <div class="input_value"> <span>Logo</span>
+		                <input id="file_logo" type="file">
+		                <a href="#" class="tooltip btn_help" title="<p><strong>Required Image.</strong> Logo images can either be a square or a horizontal rectangle.<br /><br />Square images are best if using logotext, and must be 100x100px.<br /><br />Rectangular images can be a max of 300x70px, but we recommend closer to 70x70px.</p>">Help</a> <br class="clean" />
 	                  </div>
+		              <div class="input_value"> <span>Logo-text</span>
+		                <input id="input-logotext" name="input-logotext" type="text" class="textarea_01 input_note" placeholder="PacCoffee">
+                        <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a> <br class="clean" />
+	                  </div>
+                      <div class="input_value"> <span>Strip</span>
+		                <input id="file_Strip" type="file">
+		                <a href="#" class="tooltip btn_help" title="<p><strong>Optional Image.</strong> Strip images must be 624x250px when used with a square barcode or 624x250 in all other cases.<br /><br /><strong>Use Shine Effect</strong> toggles a gloss effect that overlays the strip image. </p>">Help</a> <br class="clean" />
+	                  </div>
+                      
 	                </div>
 		            <div class="box_input">
 		              <h5>Colors</h5>
-		              <p>Choose the colors for this pass. See PassTools Documentation for details on customizing pass colors.</p>
-		              <!--<div class="input_value">
-                             <span>Description</span>
-                             <input name="description" type="text" class="textarea_01">
-                             <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a>
+		              <p>Choose the colors for this pass.</p>
+		              <div class="input_value">
+                             <span>Background</span>
+                             <input id="color_bg" name="color_bg" type="text" value="#833604" class="iColorPicker textarea_02">
+                             <a href="#" class="tooltip btn_help" title="<p>Sets the background color for the pass. It will render with a gradient effect on the actual pass.</p>">Help</a>
                              <br class="clean" /> 
-                           </div>-->
-	                </div>
+                       </div>
+                       <div class="input_value">
+                             <span>Label Text</span>
+                             <input id="color_label" name="color_label" type="text" value="#FDC36E" class="iColorPicker textarea_02">
+                             <a href="#" class="tooltip btn_help" title="<p>Set the color of the label text. On some primary fields, this color will be ignored.</p>">Help</a>
+                             <br class="clean" /> 
+                       </div>
+                       <div class="input_value">
+                             <span>Value Text</span>
+                             <input id="color_value" name="color_value" type="text" value="#FFFFFF" class="iColorPicker textarea_02">
+                             <a href="#" class="tooltip btn_help" title="<p>Set the color of the value text (also called Foreground Color).</p>">Help</a>
+                             <br class="clean" /> 
+                       </div>
+                    </div>
 	              </div>
 		          <div id="tab3" class="tab_content">
 		            <h4>Edit Primary Fields</h4>
@@ -136,11 +157,11 @@
 		              <h5>Primary Field</h5>
 		              <p>The Primary field value appears in large text above the label.</p>
 		              <div class="input_value"> <span>Label</span>
-		                <input name="Primary-Label" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-prilabel" name="Primary-Label" type="text" class="textarea_01" placeholder="PacCoffee 20週年慶">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 		              <div class="input_value"> <span>Value</span>
-		                <input name="Primary-Value" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-privalue" name="Primary-Value" type="text" class="textarea_01" placeholder="第二杯半價">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 	                </div>
@@ -152,11 +173,11 @@
 		              <h5>Secondary Field 1 of 2</h5>
 		              <p>Secondary fields and Auxiliary fields appear on the same line.</p>
 		              <div class="input_value"> <span>Label</span>
-		                <input name="Sec_Left_Label" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-seclabel-01" name="Sec_Left_Label" type="text" class="textarea_01" placeholder="載止日期">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 		              <div class="input_value"> <span>Value</span>
-		                <input name="Sec_Left_value" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-secvalue-01" name="Sec_Left_value" type="text" class="textarea_01" placeholder="Aug. 11, 2013">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 	                </div>
@@ -164,11 +185,11 @@
 		              <h5>Secondary Field  2 of 2</h5>
 		              <p>Secondary fields and Auxiliary fields appear on the same line.</p>
 		              <div class="input_value"> <span>Label</span>
-		                <input name="Sec_Right_Label" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-seclabel-02" name="Sec_Right_Label" type="text" class="textarea_01" placeholder="每日限量">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 		              <div class="input_value"> <span>Value</span>
-		                <input name="Sec_Right_Value" type="text" class="textarea_01" placeholder="Default label (optional)">
+		                <input id="input-secvalue-02" name="Sec_Right_Value" type="text" class="textarea_01" placeholder="100杯">
 		                <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                  </div>
 	                </div>
@@ -184,7 +205,7 @@
 		                <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />
 	                  </div>
 		              <div class="input_value"> <span>Alt Text</span>
-		                <input name="Barcode_Alt Text" type="text" class="textarea_01" placeholder="optional">
+		                <input id="input-altext" name="Barcode_Alt Text" type="text" class="textarea_01" placeholder="PacCoffee">
 		                <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />
 	                  </div>
 	                </div>
@@ -229,30 +250,29 @@
           
           <!-- InstanceBeginEditable name="pass_show" -->
           <div class="pass_show"><!-- pass卡預覽區 -->
-            <div class="pass_bg" style="background:#833604"><!-- [預覽]背景設定 -->
+            <div class="pass_bg" style="background-color:#833604"><!-- [預覽]背景設定 -->
               <div class="pass_mask-01">
                 <div class="coupon_top">
-                  <div class="coupon_logo">
-                    <!-- logo高度至多35px -->
-                    <img src="../../images/pic_logo-01.png" alt="*" width="97" height="14"> </div>
-                  <h5 id="logo-text" style="color:#FFD179">開始設計</h5>
+                  <div class="coupon_logo"><img id="pass-logo" src="../../images/logo-sample_03.png" alt="*"></div>
+                  <h5 id="logo-text" style="color:#FFD179">PacCoffee</h5>
                 </div>
-                <div class="coupon_primary" style="background:url(../../images/pic_Primary-01.jpg) no-repeat">
-                  <h4 style=" color:#FFF">#primary1</h4>
-                  <p style="color:#FFF">#primary1</p>
+                <div class="coupon_primary">
+                  <img id="primary_pic" src="../../images/pic_Primary-01.jpg" alt="*">
+                  <h4 id="primary_value" style="color:#fff">第二杯半價</h4>
+                  <p id="primary_label" style="color:#FFF">PacCoffee 20週年慶</p>
                 </div>
                 <div class="coupon_secondary">
                   <div class="secondary_01">
-                    <h5 style="color:#FDC36E">#Sec_Left_value</h5>
-                    <p style="color:#FFF">#secondary1</p>
+                    <h5 id="sec01-label" style="color:#FDC36E">載止日期</h5>
+                    <p id="sec01-value" style="color:#FFF">Aug. 11, 2013</p>
                   </div>
                   <div class="secondary_01">
-                    <h5 style="color:#FDC36E">#Sec_Right_value</h5>
-                    <p style="color:#FFF">#secondary2</p>
+                    <h5 id="sec02-label" style="color:#FDC36E">每日限量</h5>
+                    <p id="sec02-value" style="color:#FFF">100杯</p>
                   </div>
                 </div>
-                <div class="pass_barcode"> <img src="../../images/pic_qrcode.jpg" width="117" height="117" alt="*">
-                  <p>OPTIONAL TEXT</p>
+                <div class="pass_barcode"><img src="../../images/pic_qrcode.jpg" width="117" height="117" alt="*">
+                  <p id="barcode-text">PacCoffee</p>
                 </div>
               </div>
             </div>
@@ -266,7 +286,25 @@
                  <a href="edit_event.html">不儲存，直接離開</a>
                  <a href="#box_save" class="fancybox">是的，我要儲存</a>
 	       </div>
-            <div id="box_save" style="width:400px;display: none;">
+           <div id="box_outedit-03" style="width:400px;display: none;">
+		         <h3>注意！</h3>
+		         <p>目前資料尚未儲存，是否需要存檔再離開?</p>
+                 <a href="edit_store.html">不儲存，直接離開</a>
+                 <a href="#box_save" class="fancybox">是的，我要儲存</a>
+	       </div>
+           <div id="box_outedit-04" style="width:400px;display: none;">
+		         <h3>注意！</h3>
+		         <p>目前資料尚未儲存，是否需要存檔再離開?</p>
+                 <a href="edit_generic.html">不儲存，直接離開</a>
+                 <a href="#box_save" class="fancybox">是的，我要儲存</a>
+	       </div>
+           <div id="box_outedit-05" style="width:400px;display: none;">
+		         <h3>注意！</h3>
+		         <p>目前資料尚未儲存，是否需要存檔再離開?</p>
+                 <a href="edit_boarding.html">不儲存，直接離開</a>
+                 <a href="#box_save" class="fancybox">是的，我要儲存</a>
+	       </div>
+           <div id="box_save" style="width:400px;display: none;">
 		         <h3>儲存資料</h3>
 		         <p>檔案名稱：</p>
                  <a href="edit_coupon.html">儲存</a>
@@ -319,71 +357,49 @@
 	});	  
 </script>
 <script src="../../script/pass_edit.js"></script><!-- 票卡編輯 -->
+<script src="../../script/iColorPicker.js"></script>
 <script src="../../script/jquery.tooltipster.min.js"></script><!-- 提示框 -->
-<script>
-  $(document).ready(function() {
-     $('.tooltip').tooltipster();
-        });		
-</script>
+<script> $(document).ready(function() { $('.tooltip').tooltipster(); }) </script>
 <script src="../../script/jquery.placeholder.js"></script><!-- 輸入框提醒文字 -->
 <script src="../../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
 <script type="text/javascript">
 		$(document).ready(function() {
 			$('.fancybox').fancybox();
             $(".fancybox-effects-a").fancybox({
-				helpers: {
-					title : {
-						type : 'outside'
-					},
-					overlay : {
-						speedOut : 0
-					}
+				helpers:{
+					title:{type : 'outside'},
+					overlay:{speedOut : 0}
 				}
 			});
 
 			$(".fancybox-effects-b").fancybox({
 				openEffect  : 'none',
 				closeEffect	: 'none',
-
-				helpers : {
-					title : {
-						type : 'over'
-					}
+                helpers : {
+					title : {type : 'over'}
 				}
 			});
 
 			$(".fancybox-effects-c").fancybox({
 				wrapCSS    : 'fancybox-custom',
 				closeClick : true,
-
-				openEffect : 'none',
-
-				helpers : {
-					title : {
-						type : 'inside'
-					},
+                openEffect : 'none',
+                helpers : {
+					title : {type : 'inside'},
 					overlay : {
-						css : {
-							'background' : 'rgba(238,238,238,0.85)'
-						}
+						css : {'background' : 'rgba(238,238,238,0.85)'}
 					}
 				}
 			});
 
 			$(".fancybox-effects-d").fancybox({
 				padding: 0,
-
-				openEffect : 'elastic',
+                openEffect : 'elastic',
 				openSpeed  : 150,
-
-				closeEffect : 'elastic',
+                closeEffect : 'elastic',
 				closeSpeed  : 150,
-
-				closeClick : true,
-
-				helpers : {
-					overlay : null
-				}
+                closeClick : true,
+                helpers : { overlay : null}
 			});
          
 		 });

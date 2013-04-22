@@ -301,71 +301,49 @@
 	});	  
 </script>
 <script src="../script/pass_edit.js"></script><!-- 票卡編輯 -->
+<script src="../script/iColorPicker.js"></script>
 <script src="../script/jquery.tooltipster.min.js"></script><!-- 提示框 -->
-<script>
-  $(document).ready(function() {
-     $('.tooltip').tooltipster();
-        });		
-</script>
+<script> $(document).ready(function() { $('.tooltip').tooltipster(); }) </script>
 <script src="../script/jquery.placeholder.js"></script><!-- 輸入框提醒文字 -->
 <script src="../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
 <script type="text/javascript">
 		$(document).ready(function() {
 			$('.fancybox').fancybox();
             $(".fancybox-effects-a").fancybox({
-				helpers: {
-					title : {
-						type : 'outside'
-					},
-					overlay : {
-						speedOut : 0
-					}
+				helpers:{
+					title:{type : 'outside'},
+					overlay:{speedOut : 0}
 				}
 			});
 
 			$(".fancybox-effects-b").fancybox({
 				openEffect  : 'none',
 				closeEffect	: 'none',
-
-				helpers : {
-					title : {
-						type : 'over'
-					}
+                helpers : {
+					title : {type : 'over'}
 				}
 			});
 
 			$(".fancybox-effects-c").fancybox({
 				wrapCSS    : 'fancybox-custom',
 				closeClick : true,
-
-				openEffect : 'none',
-
-				helpers : {
-					title : {
-						type : 'inside'
-					},
+                openEffect : 'none',
+                helpers : {
+					title : {type : 'inside'},
 					overlay : {
-						css : {
-							'background' : 'rgba(238,238,238,0.85)'
-						}
+						css : {'background' : 'rgba(238,238,238,0.85)'}
 					}
 				}
 			});
 
 			$(".fancybox-effects-d").fancybox({
 				padding: 0,
-
-				openEffect : 'elastic',
+                openEffect : 'elastic',
 				openSpeed  : 150,
-
-				closeEffect : 'elastic',
+                closeEffect : 'elastic',
 				closeSpeed  : 150,
-
-				closeClick : true,
-
-				helpers : {
-					overlay : null
-				}
+                closeClick : true,
+                helpers : { overlay : null}
 			});
          
 		 });

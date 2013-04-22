@@ -411,6 +411,16 @@ footer{
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px}
+.box_input #file_logo, .box_input #file_Strip{width:54%; margin:0 5px 0 10px;}
+.box_input .textarea_02{
+	width:45%; 
+	padding:5px 10px;
+	margin:0 5px 0 10px;
+	border:1px solid #a7a7a7;
+	background:#FFF;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}	
 .btn_help{
 	display:inline-block;
 	width:18px;
@@ -441,24 +451,38 @@ footer{
 	/*word-break: break-all;*/
 	overflow:hidden}
 .coupon_logo, .coupon_top h5{display: block; float:left}
-.coupon_top img{ padding-right:5px; vertical-align: sub}
+.coupon_top img{ height:35px; padding-right:15px; vertical-align: sub}
 .coupon_top h5{ font-size:0.813em; line-height:35px}	
 .coupon_primary{
-	width:282px;
-	height:105px;
-	top:85px;
+	width:312px;
+	height:125px;
+	top:80px;
 	left:4px;
 	overflow:hidden;
-	padding:20px 15px 0;}
-.coupon_primary h4{ font-size:2.5em; line-height:1em; padding-bottom:15px}
-.coupon_primary p{ font-size:1em}	
+	font-family:Verdana, Geneva, sans-serif;
+	text-shadow:1px 1px 3px #333333}
+.coupon_primary h4, .coupon_primary p{ display:block; position:absolute; z-index:99}
+.coupon_primary h4{
+	top:20px;
+	left:10px; 
+    font-size:2.5em; 
+	line-height:1em}
+.coupon_primary p{ 
+    top:80px;
+	left:14px;
+    font-size:1em}	
 .coupon_secondary{
 	width:292px;
-	top:195px;
+	top:190px;
 	left:4px;
 	padding:20px 10px 0}
-.coupon_secondary h5, .coupon_secondary p{ font-size:0.813em}
-.coupon_secondary .secondary_01{ display:block; float:left; width:136px; padding-right:10px; overflow:hidden}	
+.coupon_secondary h5, .coupon_secondary p{ font-size:0.813em; line-height:18px}
+.coupon_secondary .secondary_01{ 
+    display:block; 
+	float:left; 
+	width:136px; 
+	padding-right:10px; 
+	overflow:hidden}	
 .pass_barcode{
 	width:128px;
 	height:137px;
