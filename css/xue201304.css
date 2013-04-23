@@ -336,7 +336,7 @@ footer{
     clear: left;
 	display:block;
 	width: 586px;
-	margin: 28px 0 20px 0;
+	margin: 10px 0 20px 0;
 	background:#FFF}
 .tabs{ width: 100%; height:75px; background: url(../images/bg_tabs.png) repeat-x}
 .tabs li a{
@@ -362,6 +362,8 @@ footer{
 .tabs li .tabicon_06:hover, .tabs li.active .tabicon_06{ background:url(../images/icon_toolbar.png) -57px -375px no-repeat}
 .tabs li .tabicon_07{background:url(../images/icon_toolbar.png) 0 -450px no-repeat}
 .tabs li .tabicon_07:hover, .tabs li.active .tabicon_07{ background:url(../images/icon_toolbar.png) -57px -450px no-repeat}
+.tabs li .tabicon_08{background:url(../images/icon_toolbar.png) 0 -525px no-repeat}
+.tabs li .tabicon_08:hover, .tabs li.active .tabicon_08{ background:url(../images/icon_toolbar.png) -57px -525px no-repeat}
 
 .tab_container {
 	clear: left;
@@ -403,24 +405,18 @@ footer{
 	padding:10px 0 0 15px; 
 	font-weight:bold}
 .input_value{ margin-bottom:20px}
-.box_input .textarea_01{
-	width:50%; 
-    padding:5px 10px;
-	margin:0 5px 0 10px;
+.box_input .textarea_01, .box_input .textarea_02, .textarea_03{
+	font-size:0.813em;
+	padding:5px 10px;
 	border:1px solid #a7a7a7;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px}
+.box_input .textarea_01{ width:50%; margin:0 5px 0 10px;}
+.box_input .textarea_02{ width:45%; margin:0 5px 0 10px;}
+.textarea_03{ width:60%; margin-left:10px}			
 .box_input #file_logo, .box_input #file_Strip{width:54%; margin:0 5px 0 10px;}
-.box_input .textarea_02{
-	width:45%; 
-	padding:5px 10px;
-	margin:0 5px 0 10px;
-	border:1px solid #a7a7a7;
-	background:#FFF;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px}	
+
 .btn_help{
 	display:inline-block;
 	width:18px;
@@ -428,7 +424,8 @@ footer{
 	background:url(../images/icon_help.png) 0 3px no-repeat;
 	text-indent:-9999px;
 	cursor:pointer}
-.box_input .sub_note{ display:inline-block; width:50%; font-size:0.688em; color:#999; margin:10px 0 0 125px; line-height:18px}			
+.box_input .sub_note{ display:inline-block; width:50%; font-size:0.688em; color:#999; margin:10px 0 0 125px; line-height:18px}	
+#result{ display: block; width:118px; height:118px}	
 	
 .pass_show{
 	display:block;
@@ -484,9 +481,9 @@ footer{
 	padding-right:10px; 
 	overflow:hidden}	
 .pass_barcode{
-	width:128px;
+	width:118px;
 	height:137px;
-	padding:5px;
+	padding:5px 8px;
 	top:265px;
 	left:91px;
 	border:1px solid #a7a7a7; 
@@ -494,7 +491,7 @@ footer{
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px}
-.pass_barcode img{ margin-left:5px}
+.pass_barcode img{}
 .pass_barcode p{ 
     display:block;
 	width:128px;
@@ -514,4 +511,56 @@ footer{
 .btn_save{ background:url(../images/btn_savesend.png) no-repeat; margin-left:5px}
 .btn_save:hover{ background:url(../images/btn_savesend.png) 0 -36px no-repeat}
 .btn_distribution{ background:url(../images/btn_savesend.png) 0 -72px no-repeat; margin-left:15px}
-.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -108px no-repeat}	  	
+.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -108px no-repeat}
+
+.box_light{ 
+    display:none; 
+	width:400px; 
+	border:1px solid #09C;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+.box_light h3{
+	display:block;
+	color:#FFF;
+	background:#09C;
+	padding:10px;
+	line-height:20px}	
+.mylightbox{ display:block; padding:15px 10px}
+.mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
+.mylightbox h4{ font-size:0.938em;}
+.mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
+.box_light a.btn_blue, .box_light a.btn_blue_02{
+	display:block;
+	background:#09C;
+	font-size:0.938em;
+	text-align:center;
+	color:#FFF;
+	padding:5px 15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+.box_light a.btn_blue{width:20%; margin:15px auto;}
+.box_light a.btn_blue_02{ width:35%; float:right; margin:20px 10px 15px}	
+.box_light a.btn_blue:hover, .box_light a.btn_blue_02:hover{
+	text-decoration:none;
+	background:#FDB13B;
+	color:#2A4E56}
+
+.tip_coupon-01, .tip_coupon-02, .tip_coupon-03{
+	display:block;
+	position:absolute;
+	z-index:999;
+	-moz-border-box-shadow:0 0 12px 8px #FDC36E;
+	-webkit-border-box-shadow:0 0 12px 8px #FDC36E;
+	box-shadow:0 0 12px 8px #FDC36E}
+.tip_coupon-01{ top:80px; left:610px; width:312px; height:125px}
+.tip_coupon-02{	top:205px; left:610px; width:312px; height:60px}
+.tip_coupon-03{	top:266px; left:699px; width:134px; height:147px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px}
+#screenshot{
+	display:none;
+	position:absolute;
+	border:2px solid #3074B1;
+	background:#EFEFEF;
+	padding:5px;
+	z-index:8900}					

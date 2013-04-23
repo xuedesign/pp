@@ -6,7 +6,7 @@
 	<infoitem key="MMSnapToGuide" value="true" />
 	<infoitem key="MMGuidesSnapToElements" value="true" />
 	<infoitem key="MMDistanceColor" value="#0000FF" />
-	<infoitem key="MMGuideCount" value="17" />
+	<infoitem key="MMGuideCount" value="24" />
 	<infoitem key="MMGuide0" value="vertical: user 106 px" />
 	<infoitem key="MMGuide1" value="vertical: user 690 px" />
 	<infoitem key="MMGuide2" value="vertical: user 144 px" />
@@ -22,6 +22,13 @@
 	<infoitem key="MMGuide12" value="vertical: template 735 px" />
 	<infoitem key="MMGuide13" value="vertical: template 1044 px" />
 	<infoitem key="MMGuide14" value="vertical: template 106 px" />
-	<infoitem key="MMGuide15" value="vertical: template 601 px" />
-	<infoitem key="MMGuide16" value="vertical: template 317 px" />
+	<infoitem key="MMGuide15" value="vertical: template 690 px" />
+	<infoitem key="MMGuide16" value="vertical: template 144 px" />
+	<infoitem key="MMGuide17" value="horizontal: template 567 px" />
+	<infoitem key="MMGuide18" value="horizontal: template 806 px" />
+	<infoitem key="MMGuide19" value="vertical: template 735 px" />
+	<infoitem key="MMGuide20" value="vertical: template 1044 px" />
+	<infoitem key="MMGuide21" value="vertical: template 106 px" />
+	<infoitem key="MMGuide22" value="vertical: template 601 px" />
+	<infoitem key="MMGuide23" value="vertical: template 317 px" />
 </info>
