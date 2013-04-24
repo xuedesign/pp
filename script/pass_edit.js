@@ -50,7 +50,23 @@ $(function(){
 	
 		
 //顏色改變
+$(function() {
+    $("#color_label").change(function() {
+        $("#logo-text").css("color", $(this).val());
+		$("#sec01-label").css("color", $(this).val());
+		$("#sec02-label").css("color", $(this).val());
+    });
+    
+	$("#color_value").change(function() {
+        $("#primary_value").css("color", $(this).val());
+		$("#primary_label").css("color", $(this).val());
+		$("#sec01-value").css("color", $(this).val());
+		$("#sec02-value").css("color", $(this).val());
+    });
+	
+    $("#color_bg").change(function() {
+        $(".pass_bg").css("background-color", $(this).val());
+    });
+});
 
-
-//QR code製作
 
