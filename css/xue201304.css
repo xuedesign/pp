@@ -93,7 +93,7 @@ header h2{ display:none}
 	position:absolute;
 	width:151px;
 	height:18px;
-	top:327px;
+	top:380px;
 	left:359px;
 	z-index:200;
 	text-indent:-9999px}
@@ -129,7 +129,7 @@ header h2{ display:none}
 
 /*2.3 服務介紹---------------------------*/
 #service_box, #partner_box{ display:block; width:962px; margin:0 auto}
-#service_box{padding-bottom:45px}
+#service_box{ margin-top:15px; padding-bottom:45px}
 .service_info{
 	display:block;
 	float:left;
