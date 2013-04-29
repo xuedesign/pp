@@ -55,3 +55,4 @@ $(function(){
 $(function(){
 	$('input[placeholder]').placeholder();
  });
+ 

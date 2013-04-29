@@ -370,7 +370,7 @@ footer{
 	display:block;
 	width: 100%;
 	background: #fff;}
-.tab_container .tab_content {padding: 20px}
+.tab_container .tab_content {padding: 10px 20px}
 .tab_container .tab_content h4 { font-size:1.25em; color:#7d7c7c; margin-bottom:20px}
 .note_bar{
 	display:block;
@@ -404,7 +404,7 @@ footer{
 	text-align:right; 
 	padding:10px 0 0 15px; 
 	font-weight:bold}
-.input_value{ margin-bottom:20px}
+.input_value{ margin-bottom:10px}
 .box_input .textarea_01, .box_input .textarea_02, .textarea_03{
 	font-size:0.813em;
 	padding:5px 10px;
@@ -528,8 +528,9 @@ footer{
 	line-height:20px}	
 .mylightbox{ display:block; padding:15px 10px}
 .mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
-.mylightbox h4{ font-size:0.938em;}
+.mylightbox h4{ font-size:0.938em; line-height:32px}
 .mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
+.mylightbox .send_item{ margin-top:10px}
 .box_light a.btn_blue, .box_light a.btn_blue_02{
 	display:block;
 	background:#09C;
@@ -557,10 +558,89 @@ footer{
 .tip_coupon-01{ top:80px; left:610px; width:312px; height:125px}
 .tip_coupon-02{	top:205px; left:610px; width:312px; height:60px}
 .tip_coupon-03{	top:266px; left:699px; width:134px; height:147px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px}
+.tip_coupon-04{
+	display:block;
+	position:absolute;
+	width:308px; 
+	height:376px;
+	top:35px; 
+	left:610px;
+	z-index:999;
+	border:2px solid #999;
+	background:#F2EFE6;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px}
+
 #screenshot{
 	display:none;
 	position:absolute;
 	border:2px solid #3074B1;
 	background:#EFEFEF;
 	padding:5px;
-	z-index:8900}					
+	z-index:8900}
+#scrollbar1 { width: 300px; margin: 20px auto 10px}
+#scrollbar1 .viewport {
+	display:block;
+	position: relative; 
+    width: 280px; 
+	height: 340px; 
+	overflow: hidden}
+#scrollbar1 .overview {
+	display:block;
+	position: absolute; 
+	list-style: none; 
+	left: 0; 
+	top: 0; 
+	padding: 0; 
+	margin: 0}
+#scrollbar1 .scrollbar{ 
+    display:block;
+    background: url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+	position: relative; 
+	background-position: 0 0; 
+	float: right;
+	width: 15px;}
+#scrollbar1 .track{
+	background: url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; 
+	height:340px;
+	width:13px; 
+	position: relative; 
+	padding: 0 1px}
+#scrollbar1 .thumb {
+	display:block; 
+	position: absolute; 
+	width: 25px;
+	height: 100px; 
+    background: url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; 
+	cursor: pointer; 
+	overflow: hidden; 
+	top: 0; 
+	left: -5px}
+#scrollbar1 .thumb .end {
+	display:block; 
+    background: url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; 
+	overflow: hidden; 
+	height: 5px;
+	width: 25px}
+#scrollbar1 .disable {display: none}
+.sample_btn{
+	display:block;
+	width:260px;
+	height:88px;
+	background:url(../images/bg_samplebtn.png) no-repeat;
+	margin-left:15px;
+	padding-bottom:10px}
+.back_content{
+	display:block;
+	width:230px;
+	background:#FFF;
+	border:1px solid #999;
+	margin-left:15px;
+	padding:15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+.back_content h5{ font-size:0.938em; letter-spacing:1px}
+.back_content p{ font-size:0.813em; line-height:20px; padding-left:15px}
+.back_content span{ display:block; width:240px; border-bottom:1px solid #999; margin:10px auto}	

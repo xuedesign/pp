@@ -84,6 +84,39 @@
        </section>
        
        <section id="pass_edit-main">
+          <div class="pass_show"><!-- pass卡預覽區 -->
+         <!-- TemplateBeginEditable name="pass_show" -->
+           <div class="pass_bg" style="background-color:#833604"><!-- [預覽]背景設定 -->
+             <div class="pass_mask-01">
+               <div class="coupon_top">
+                 <div class="coupon_logo"><img id="pass-logo" src="../images/logo-sample_03.png" alt="*"></div>
+                 <h5 id="logo-text" style="color:#FFD179">PacCoffee</h5>
+               </div>
+               <div class="coupon_primary"> <img id="primary_pic" src="../images/pic_Primary-01.jpg" alt="*">
+                 <h4 id="primary_value" style="color:#fff">第二杯半價</h4>
+                 <p id="primary_label" style="color:#FFF">PacCoffee 20週年慶</p>
+               </div>
+               <div class="coupon_secondary">
+                 <div class="secondary_01">
+                   <h5 id="sec01-label" style="color:#FDC36E">載止日期</h5>
+                   <p id="sec01-value" style="color:#FFF">Aug. 11, 2013</p>
+                 </div>
+                 <div class="secondary_01">
+                   <h5 id="sec02-label" style="color:#FDC36E">每日限量</h5>
+                   <p id="sec02-value" style="color:#FFF">100杯</p>
+                 </div>
+               </div>
+               <div class="pass_barcode"> <img src="../images/pic_qrcode.jpg" width="117" height="117" alt="*">
+                 <p id="barcode-text">PacCoffee</p>
+               </div>
+             </div>
+           </div>
+           <!-- TemplateEndEditable -->
+             <a href="#box_save" class="btn_save fancybox">Save</a> 
+           <a href="#box_send" class="btn_distribution fancybox">Distribution</a> 
+          </div>
+                 
+       
           <div class="pass_tools"><!-- pass卡編輯區 -->
              <div class="abgne_tab">
 		        <ul class="tabs">
@@ -253,39 +286,6 @@
             </div>
          </div>
          
-         
-         <div class="pass_show"><!-- pass卡預覽區 -->
-         <!-- TemplateBeginEditable name="pass_show" -->
-           <div class="pass_bg" style="background-color:#833604"><!-- [預覽]背景設定 -->
-             <div class="pass_mask-01">
-               <div class="coupon_top">
-                 <div class="coupon_logo"><img id="pass-logo" src="../images/logo-sample_03.png" alt="*"></div>
-                 <h5 id="logo-text" style="color:#FFD179">PacCoffee</h5>
-               </div>
-               <div class="coupon_primary"> <img id="primary_pic" src="../images/pic_Primary-01.jpg" alt="*">
-                 <h4 id="primary_value" style="color:#fff">第二杯半價</h4>
-                 <p id="primary_label" style="color:#FFF">PacCoffee 20週年慶</p>
-               </div>
-               <div class="coupon_secondary">
-                 <div class="secondary_01">
-                   <h5 id="sec01-label" style="color:#FDC36E">載止日期</h5>
-                   <p id="sec01-value" style="color:#FFF">Aug. 11, 2013</p>
-                 </div>
-                 <div class="secondary_01">
-                   <h5 id="sec02-label" style="color:#FDC36E">每日限量</h5>
-                   <p id="sec02-value" style="color:#FFF">100杯</p>
-                 </div>
-               </div>
-               <div class="pass_barcode"> <img src="../images/pic_qrcode.jpg" width="117" height="117" alt="*">
-                 <p id="barcode-text">PacCoffee</p>
-               </div>
-             </div>
-           </div>
-           <!-- TemplateEndEditable -->
-             <a href="#box_save" class="btn_save fancybox">Save</a> 
-           <a href="#box_send" class="btn_distribution fancybox">Distribution</a> 
-          </div>
-          
          <!-- TemplateBeginEditable name="page_leave" -->
          <div id="box_outedit-02" class="box_light">
            <h3>Attention！</h3>
@@ -329,14 +329,22 @@
           <div id="box_send" class="box_light">
 	            <h3>Distribution</h3>
 	            <div class="mylightbox">
-                   <input name="select_send" type="radio" value="email">
+                   <input name="select_send" type="radio" class="send_item" value="email">
                    <h4>Email</h4>
                    <input name="myemail" type="text" class="textarea_03" placeholder="Enter Your Email">
                    <p>send this Passbook pass to yourself or someone else. The recipient must have an iPhone or iPod touch with Passbook (ios6) to view this pass.</p> 
                 </div>
                 <div class="mylightbox">
-                   <input name="select_send" type="radio" value="facebook">
+                   <input name="select_send" type="radio" class="send_item" value="facebook">
                    <h4>Facebook</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook Fans Club 01</option>
+                       <option>My Facebook Fans Club 02</option>
+                       <option>My Facebook Fans Club 03</option>
+                       <option>My Facebook Fans Club 04</option>
+                       <option>My Facebook Fans Club 05</option>
+                   </select>
                    <p>Distnbute this Passbook pass to your fans of Facebook. The users must have an iPhone or iPod touch with passbook (ios6) to view this pass.</p>  
                 </div>
                 <a href="#" class="btn_blue">Send</a>
@@ -365,6 +373,17 @@
     </ul>
   </div>  
 </footer>
+
+<!-- TemplateBeginEditable name="pass_scriptedit" -->
+<script src="../script/pass_edit.js"></script><!-- 票卡編輯 -->
+<!-- TemplateEndEditable -->
+
+<script src="../script/tinyscrollbar.js"></script><!-- 視窗拉BAR -->
+<script><!-- 視窗拉BAR -->
+		$(document).ready(function(){
+			$('#scrollbar1').tinyscrollbar();	
+		});
+</script>		
 <script><!-- 頁籤切換 -->
    $(function(){
 		var _showTab = 0;
@@ -383,51 +402,20 @@
 		});
 	});	  
 </script>
-<script src="../script/pass_edit.js"></script><!-- 票卡編輯 -->
 <script src="../script/screenshot.js"></script><!-- 滑過預覽-->
 <script src="../script/iColorPicker.js"></script><!-- 選色器 -->
 <script src="../script/jquery.tooltipster.min.js"></script><!-- 提示框 -->
 <script> $(document).ready(function() { $('.tooltip').tooltipster(); }) </script><!-- 提示框 -->
 <script src="../script/jquery.placeholder.js"></script><!-- 輸入框提醒文字 -->
 <script src="../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
-<script type="text/javascript">
+<script>
 		$(document).ready(function() {
 			$('.fancybox').fancybox();
             $(".fancybox-effects-a").fancybox({
 				helpers:{
 					title:{type : 'outside'},
-					overlay:{speedOut : 0}
-				}
-			});
-         $(".fancybox-effects-b").fancybox({
-				openEffect  : 'none',
-				closeEffect	: 'none',
-                helpers : {
-					title : {type : 'over'}
-				}
-			});
-          $(".fancybox-effects-c").fancybox({
-				wrapCSS    : 'fancybox-custom',
-				closeClick : true,
-                openEffect : 'none',
-                helpers : {
-					title : {type : 'inside'},
-					overlay : {
-						css : {'background' : 'rgba(238,238,238,0.85)'}
-					}
-				}
-			});
-          $(".fancybox-effects-d").fancybox({
-				padding: 0,
-                openEffect : 'elastic',
-				openSpeed  : 150,
-                closeEffect : 'elastic',
-				closeSpeed  : 150,
-                closeClick : true,
-                helpers : { overlay : null}
-			});
-         });
-	</script>
+					overlay:{speedOut : 0}  }  });  });
+</script>
 <script src="../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
 <script src="../script/other_set.js"></script>
 </body>

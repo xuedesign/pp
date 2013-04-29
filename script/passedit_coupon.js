@@ -46,7 +46,31 @@ $(function(){
          $("#barcode-text").empty();
          $("#barcode-text").text($(this).attr("value"));	 
       });
-    });					
+    });
+$(function(){
+         $("#input-backlabel-01").keyup(function(){
+         $("#backlabel_01").empty();
+         $("#backlabel_01").text($(this).attr("value"));	 
+      });
+    });
+$(function(){
+         $("#input-backvalue-01").keyup(function(){
+         $("#backvalue_01").empty();
+         $("#backvalue_01").text($(this).attr("value"));	 
+      });
+    });
+$(function(){
+         $("#input-backlabel-02").keyup(function(){
+         $("#backlabel_02").empty();
+         $("#backlabel_02").text($(this).attr("value"));	 
+      });
+    });
+$(function(){
+         $("#input-backvalue-02").keyup(function(){
+         $("#backvalue_02").empty();
+         $("#backvalue_02").text($(this).attr("value"));	 
+      });
+    });									
 	
 		
 //顏色改變
@@ -68,5 +92,3 @@ $(function() {
         $(".pass_bg").css("background-color", $(this).val());
     });
 });
-
-
