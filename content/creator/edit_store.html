@@ -88,27 +88,31 @@
          <!-- InstanceBeginEditable name="pass_show" -->
            <div class="pass_bg" style="background-color:#f9c0fe"><!-- [預覽]背景設定 -->
              <div class="pass_mask-03">
-               <!--<div class="coupon_top">
-                 <div class="coupon_logo"><img id="pass-logo" src="../../images/logo-sample_03.png" alt="*"></div>
-                 <h5 id="logo-text" style="color:#FFD179">PacCoffee</h5>
+               <div class="coupon_top">
+                 <div class="coupon_logo"><img id="pass-logo" src="../../images/logo-sample_02.png" alt="*"></div>
+                 <h5 id="logo-text" style="color:#ba091c">Pacbeauty Shop</h5>
                </div>
-               <div class="coupon_primary"> <img id="primary_pic" src="../../images/pic_Primary-01.jpg" alt="*">
-                 <h4 id="primary_value" style="color:#fff">第二杯半價</h4>
-                 <p id="primary_label" style="color:#FFF">PacCoffee 20週年慶</p>
+               <div class="coupon_primary"> <img id="primary_pic" src="../../images/pic_Primary-02.jpg" alt="*">
+                 <h4 id="primary_value" style="color:#fff">儲點卡</h4>
+                 <p id="primary_label" style="color:#FFF">Pacbeauty Shop</p>
                </div>
                <div class="coupon_secondary">
-                 <div class="secondary_01">
-                   <h5 id="sec01-label" style="color:#FDC36E">載止日期</h5>
-                   <p id="sec01-value" style="color:#FFF">Aug. 11, 2013</p>
+                 <div class="secondary_02 pdright">
+                   <h5 id="sec01-label" style="color:#ba091c">持卡人</h5>
+                   <p id="sec01-value" style="color:#353535">Judy Pan</p>
                  </div>
-                 <div class="secondary_01">
-                   <h5 id="sec02-label" style="color:#FDC36E">每日限量</h5>
-                   <p id="sec02-value" style="color:#FFF">100杯</p>
+                 <div class="secondary_02 pdright">
+                   <h5 id="sec02-label" style="color:#ba091c">會員等級</h5>
+                   <p id="sec02-value" style="color:#353535">Gold</p>
+                 </div>
+                 <div class="secondary_02">
+                   <h5 id="sec03-label" style="color:#ba091c">剩餘點數</h5>
+                   <p id="sec02-value" style="color:#353535">200點</p>
                  </div>
                </div>
                <div class="pass_barcode"> <img src="../../images/pic_qrcode.jpg" width="117" height="117" alt="*">
-                 <p id="barcode-text">PacCoffee</p>
-               </div>-->
+                 <p id="barcode-text">Pacbeauty</p>
+               </div>
              </div>
            </div>
            <!-- InstanceEndEditable -->
@@ -126,6 +130,7 @@
 		            <li><a href="#tab3" class="tabicon_02" title="Edit Color">Edit Color</a></li>
 		            <li><a href="#tab4" class="tabicon_03" title="Edit Primary Fields">Edit Primary Fields</a></li>
 		            <li><a href="#tab5" class="tabicon_04" title="Edit Secondary Fields">Edit Secondary Fields</a></li>
+                    <li><a href="#tab9" class="tabicon_09" title="Edit Secondary Fields">Edit Auxiliary Fields</a></li>
 		            <li><a href="#tab6" class="tabicon_05" title="Edit Barcode">Edit Barcode</a></li>
 		            <li><a href="#tab7" class="tabicon_06" title="Edit Back Fields">Edit Back Fields</a></li>
 	              <!-- InstanceEndEditable -->
@@ -156,7 +161,7 @@
 		                  <a href="#" class="tooltip btn_help" title="<p><strong>Required Image.</strong> Logo images can either be a square or a horizontal rectangle.<br /><br />Square images are best if using logotext, and must be 100x100px.<br /><br />Rectangular images can be a max of 300x70px, but we recommend closer to 70x70px.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Logo-text</span>
-		                  <input id="input-logotext" name="input-logotext" type="text" class="textarea_01 input_note" placeholder="PacCoffee">
+		                  <input id="input-logotext" name="input-logotext" type="text" class="textarea_01 input_note" value="Pacbeauty Shop">
 		                  <a href="#" class="tooltip btn_help" title="<p>Provide a short description of your pass. The description is used by iOS Accessibility to differentiate your pass from others.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Strip</span>
@@ -172,15 +177,15 @@
 		                <h5>Colors</h5>
 		                <p>Choose the colors for this pass.</p>
 		                <div class="input_value"> <span>Background</span>
-		                  <input id="color_bg" name="color_bg" type="text" value="#833604" class="iColorPicker textarea_02">
+		                  <input id="color_bg" name="color_bg" type="text" value="#f9c0fe" class="iColorPicker textarea_02">
 		                  <a href="#" class="tooltip btn_help" title="<p>Sets the background color for the pass. It will render with a gradient effect on the actual pass.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Label Text</span>
-		                  <input id="color_label" name="color_label" type="text" value="#FDC36E" class="iColorPicker textarea_02">
+		                  <input id="color_label" name="color_label" type="text" value="#ba091c" class="iColorPicker textarea_02">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set the color of the label text. On some primary fields, this color will be ignored.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value Text</span>
-		                  <input id="color_value" name="color_value" type="text" value="#FFFFFF" class="iColorPicker textarea_02">
+		                  <input id="color_value" name="color_value" type="text" value="#353535" class="iColorPicker textarea_02">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set the color of the value text (also called Foreground Color).</p>">Help</a> <br class="clean" />
 	                    </div>
 	                  </div>
@@ -189,46 +194,61 @@
                     <div id="tab4" class="tab_content">
 		              <div class="tip_coupon-01"></div>
 		              <h4>Edit Primary Fields</h4>
-		              <div class="note_bar">Optional field — Appears in the center over the strip image</div>
 		              <div class="box_input">
 		                <h5>Primary Field</h5>
 		                <p>The Primary field value appears in large text above the label.</p>
 		                <div class="input_value"> <span>Label</span>
-		                  <input id="input-prilabel" name="Primary-Label" type="text" class="textarea_01" placeholder="PacCoffee 20週年慶">
+		                  <input id="input-prilabel" name="Primary-Label" type="text" class="textarea_01" value="Pacbeauty">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value</span>
-		                  <input id="input-privalue" name="Primary-Value" type="text" class="textarea_01" placeholder="第二杯半價">
+		                  <input id="input-privalue" name="Primary-Value" type="text" class="textarea_01" value="儲點卡">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 	                  </div>
 	                </div>
 		            
                     <div id="tab5" class="tab_content">
-		              <div class="tip_coupon-02"></div>
+		              <div class="tip_coupon-05"></div>
 		              <h4>Edit Secondary Fields</h4>
-		              <div class="note_bar">Optional field — Appears on the left under the Strip Image</div>
 		              <div class="box_input">
 		                <h5>Secondary Field 1 of 2</h5>
 		                <p>Secondary fields and Auxiliary fields appear on the same line.</p>
 		                <div class="input_value"> <span>Label</span>
-		                  <input id="input-seclabel-01" name="Sec_Left_Label" type="text" class="textarea_01" placeholder="載止日期">
+		                  <input id="input-seclabel-01" name="Sec_Left_Label" type="text" class="textarea_01" value="持卡人">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value</span>
-		                  <input id="input-secvalue-01" name="Sec_Left_value" type="text" class="textarea_01" placeholder="Aug. 11, 2013">
+		                  <input id="input-secvalue-01" name="Sec_Left_value" type="text" class="textarea_01" value="Judy Pan">
+		                  <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
+	                    </div>
+	                  </div>
+		            </div>
+                    
+                    <div id="tab9" class="tab_content">
+		              <div class="tip_coupon-06"></div>
+		              <h4>Edit Auxiliary Fields</h4>
+		              <div class="box_input">
+		                <h5>Auxiliary Fields 1 of 2</h5>
+		                <p>Secondary fields and Auxiliary fields appear on the same line.</p>
+		                <div class="input_value"> <span>Label</span>
+		                  <input id="input-seclabel-02" name="Sec_Left_Label" type="text" class="textarea_01" value="會員等級">
+		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
+	                    </div>
+		                <div class="input_value"> <span>Value</span>
+		                  <input id="input-secvalue-02" name="Sec_Left_value" type="text" class="textarea_01" value="Gold">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 	                  </div>
 		              <div class="box_input">
-		                <h5>Secondary Field  2 of 2</h5>
+		                <h5>Auxiliary Fields  2 of 2</h5>
 		                <p>Secondary fields and Auxiliary fields appear on the same line.</p>
 		                <div class="input_value"> <span>Label</span>
-		                  <input id="input-seclabel-02" name="Sec_Right_Label" type="text" class="textarea_01" placeholder="每日限量">
+		                  <input id="input-seclabel-03" name="Sec_Right_Label" type="text" class="textarea_01" value="剩餘點數">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value</span>
-		                  <input id="input-secvalue-02" name="Sec_Right_Value" type="text" class="textarea_01" placeholder="100杯">
+		                  <input id="input-secvalue-03" name="Sec_Right_Value" type="text" class="textarea_01" value="200點">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default value to appear on the pass. A different value can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 	                  </div>
@@ -237,16 +257,15 @@
                     <div id="tab6" class="tab_content">
 		              <div class="tip_coupon-03"></div>
 		              <h4>Edit Barcode</h4>
-		              <div class="note_bar">Optional field — Appears at the bottom of the pass</div>
 		              <div class="box_input">
 		                <h5>Barcode</h5>
 		                <p>Apple recommends using the PDF417 format for aesthetic reasons.</p>
 		                <div class="input_value"> <span>Value</span>
-		                  <textarea name="Barcode_Value" cols="" rows="" class="textarea_01" placeholder="required"></textarea>
+		                  <textarea name="Barcode_Value" cols="" rows="" class="textarea_01" value="required"></textarea>
 		                  <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Alt Text</span>
-		                  <input id="input-altext" name="Barcode_Alt Text" type="text" class="textarea_01" placeholder="PacCoffee">
+		                  <input id="input-altext" name="Barcode_Alt Text" type="text" class="textarea_01" value="Pacbeauty">
 		                  <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />
 	                    </div>
 	                  </div>
@@ -279,7 +298,7 @@
 		                <h5>Back Field 1 of 2</h5>
 		                <p>Back field content can be very long.</p>
 		                <div class="input_value"> <span>Label</span>
-		                  <input id="input-backlabel-01" name="Back Field_Label-01" type="text" class="textarea_01" placeholder="注意事項">
+		                  <input id="input-backlabel-01" name="Back Field_Label-01" type="text" class="textarea_01" value="注意事項">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value</span>
@@ -292,7 +311,7 @@
 		                <h5>Back Field  2 of 2</h5>
 		                <p>Back field content can be very long.</p>
 		                <div class="input_value"> <span>Label</span>
-		                  <input id="input-backlabel-02" name="Back Field_Label-02" type="text" class="textarea_01" placeholder="商家資訊">
+		                  <input id="input-backlabel-02" name="Back Field_Label-02" type="text" class="textarea_01" value="商家資訊">
 		                  <a href="#" class="tooltip btn_help" title="<p>Set a default label to appear on the pass. A different label can replace this default during pass creation.<br /><br />If you don't want a default, just leave the field empty.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Value</span>

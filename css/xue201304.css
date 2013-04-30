@@ -364,6 +364,8 @@ footer{
 .tabs li .tabicon_07:hover, .tabs li.active .tabicon_07{ background:url(../images/icon_toolbar.png) -57px -450px no-repeat}
 .tabs li .tabicon_08{background:url(../images/icon_toolbar.png) 0 -525px no-repeat}
 .tabs li .tabicon_08:hover, .tabs li.active .tabicon_08{ background:url(../images/icon_toolbar.png) -57px -525px no-repeat}
+.tabs li .tabicon_09{background:url(../images/icon_toolbar.png) 0 -600px no-repeat}
+.tabs li .tabicon_09:hover, .tabs li.active .tabicon_09{ background:url(../images/icon_toolbar.png) -57px -600px no-repeat}
 
 .tab_container {
 	clear: left;
@@ -438,7 +440,7 @@ footer{
 .pass_mask-02{ background:url(../images/phoneframe-event.png) no-repeat}
 .pass_mask-03{ background:url(../images/phoneframe-generic.png) no-repeat}
 .pass_mask-04{ background:url(../images/phoneframe-boarding.png) no-repeat}
-.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode{ display:block; position:absolute}
+.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode, .generic_primary{ display:block; position:absolute}
 .coupon_top{
 	width:282px;
 	/*height:40px;*/
@@ -449,16 +451,17 @@ footer{
 	overflow:hidden}
 .coupon_logo, .coupon_top h5{display: block; float:left}
 .coupon_top img{ height:35px; padding-right:15px; vertical-align: sub}
-.coupon_top h5{ font-size:0.813em; line-height:35px}	
-.coupon_primary{
+.coupon_top h5{ font-size:0.813em; line-height:35px}
+.coupon_primary, .generic_primary{
 	width:312px;
 	height:125px;
 	top:80px;
 	left:4px;
 	overflow:hidden;
-	font-family:Verdana, Geneva, sans-serif;
-	text-shadow:1px 1px 3px #333333}
-.coupon_primary h4, .coupon_primary p{ display:block; position:absolute; z-index:99}
+	font-family:Verdana, Geneva, sans-serif}		
+.coupon_primary{text-shadow:1px 1px 3px #333333}	
+.coupon_primary h4, .coupon_primary p, .generic_primary h4, .generic_primary p, #pic_thumbnail{ 
+    display:block; position:absolute; z-index:99}
 .coupon_primary h4{
 	top:20px;
 	left:10px; 
@@ -467,19 +470,34 @@ footer{
 .coupon_primary p{ 
     top:80px;
 	left:14px;
-    font-size:1em}	
+    font-size:1em}
+.generic_primary h4, .generic_primary p{
+	width:160px; 
+	padding-right:10px;
+	line-height:25px;
+	padding:20px 10px 0;
+	overflow:hidden}	
+.generic_primary h4{ font-size:0.813em; top:0; left:0 }
+.generic_primary p{ font-size:1.25em; top:33px; left:0}	
+#pic_thumbnail{
+	width:100px;
+	height:100px;
+	top:20px;
+	right:28px;
+	border:2px solid #CCC}		
 .coupon_secondary{
 	width:292px;
 	top:190px;
 	left:4px;
 	padding:20px 10px 0}
 .coupon_secondary h5, .coupon_secondary p{ font-size:0.813em; line-height:18px}
-.coupon_secondary .secondary_01{ 
-    display:block; 
-	float:left; 
-	width:136px; 
-	padding-right:10px; 
-	overflow:hidden}	
+.coupon_secondary .secondary_01, .coupon_secondary .secondary_02, .coupon_secondary .secondary_03, .coupon_secondary .secondary_04{
+	display:block; float:left; overflow:hidden}
+.coupon_secondary .secondary_01{ width:136px; padding-right:10px}
+.coupon_secondary .secondary_02{ width:90px }
+.coupon_secondary .secondary_03{ width:162px; padding-right:10px}
+.coupon_secondary .secondary_04{ width:110px}		
+.pdright{ padding-right:10px}			
 .pass_barcode{
 	width:118px;
 	height:137px;
@@ -499,7 +517,15 @@ footer{
 	font-size:0.75em; 
 	color:#666;;
 	text-align:center;
-	overflow:hidden}	
+	overflow:hidden}
+.bg_line{ 
+    display:block;
+	position:absolute; 
+	width:290px; 
+	height:11px; 
+	background:url(../images/bg_line.png) no-repeat;
+	top:80px;
+	left:11px;}	
 
 .btn_save, .btn_distribution{ 
     display:block; 
@@ -548,7 +574,7 @@ footer{
 	background:#FDB13B;
 	color:#2A4E56}
 
-.tip_coupon-01, .tip_coupon-02, .tip_coupon-03{
+.tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07{
 	display:block;
 	position:absolute;
 	z-index:999;
@@ -571,6 +597,9 @@ footer{
 	border-radius:15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px}
+.tip_coupon-05{	top:205px; left:610px; width:100px; height:60px}
+.tip_coupon-06{	top:205px; left:710px; width:210px; height:60px}
+.tip_coupon-07{	top:103px; left:610px; width:180px; height:100px}	
 
 #screenshot{
 	display:none;
