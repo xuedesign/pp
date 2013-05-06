@@ -219,12 +219,7 @@ footer{
 /* 3. 票卡編輯 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#pass_about h3, .editop_left h3{ 
-  display:block;
-  height:24px;
-  text-indent:-9999px}
-#pass_about h3{ background:url(../images/bg_page-title.png) no-repeat}
-.editop_left h3{ background:url(../images/bg_page-title.png) 0 -24px no-repeat}  
+#pass_about h3, .editop_left h3{ font-size:1.5em; font-weight:normal; color:#26aed0}
 #pass_about p, .editop_left p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
 
 /*3.1 票卡選擇---------------------------*/
@@ -440,7 +435,7 @@ footer{
 .pass_mask-02{ background:url(../images/phoneframe-event.png) no-repeat}
 .pass_mask-03{ background:url(../images/phoneframe-generic.png) no-repeat}
 .pass_mask-04{ background:url(../images/phoneframe-boarding.png) no-repeat}
-.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode, .generic_primary{ display:block; position:absolute}
+.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode, .generic_primary, .event_primary{ display:block; position:absolute}
 .coupon_top{
 	width:282px;
 	/*height:40px;*/
@@ -452,7 +447,7 @@ footer{
 .coupon_logo, .coupon_top h5{display: block; float:left}
 .coupon_top img{ height:35px; padding-right:15px; vertical-align: sub}
 .coupon_top h5{ font-size:0.813em; line-height:35px}
-.coupon_primary, .generic_primary{
+.coupon_primary, .generic_primary, .event_primary{
 	width:312px;
 	height:125px;
 	top:80px;
@@ -460,7 +455,7 @@ footer{
 	overflow:hidden;
 	font-family:Verdana, Geneva, sans-serif}		
 .coupon_primary{text-shadow:1px 1px 3px #333333}	
-.coupon_primary h4, .coupon_primary p, .generic_primary h4, .generic_primary p, #pic_thumbnail{ 
+.coupon_primary h4, .coupon_primary p, .generic_primary h4, .generic_primary p, .event_primary h4, .event_primary h5, .event_primary p, #pic_thumbnail, #event_thumbnail{ 
     display:block; position:absolute; z-index:99}
 .coupon_primary h4{
 	top:20px;
@@ -478,18 +473,24 @@ footer{
 	padding:20px 10px 0;
 	overflow:hidden}	
 .generic_primary h4{ font-size:0.813em; top:0; left:0 }
-.generic_primary p{ font-size:1.25em; top:33px; left:0}	
-#pic_thumbnail{
-	width:100px;
-	height:100px;
-	top:20px;
-	right:28px;
-	border:2px solid #CCC}		
+.generic_primary p{ font-size:1.25em; top:33px; left:0}
+.event_primary h4, .event_primary h5, .event_primary p{
+	width:160px; 
+	padding-right:10px;
+	font-size:0.813em;
+	line-height:25px;
+	padding:20px 10px 0}
+.event_primary h4{ top:0; left:0 }
+.event_primary p{ top:20px; left:0 }
+.event_primary h5{ top:45px; left:0 }
+.event_primary .secon_value{ top:65px; left:0 }		
+
 .coupon_secondary{
 	width:292px;
 	top:190px;
-	left:4px;
-	padding:20px 10px 0}
+	left:4px}
+.pdtop_01{padding:20px 10px 0}
+.pdtop_02{padding:4px 10px 0}	
 .coupon_secondary h5, .coupon_secondary p{ font-size:0.813em; line-height:18px}
 .coupon_secondary .secondary_01, .coupon_secondary .secondary_02, .coupon_secondary .secondary_03, .coupon_secondary .secondary_04{
 	display:block; float:left; overflow:hidden}
@@ -497,7 +498,11 @@ footer{
 .coupon_secondary .secondary_02{ width:90px }
 .coupon_secondary .secondary_03{ width:162px; padding-right:10px}
 .coupon_secondary .secondary_04{ width:110px}		
-.pdright{ padding-right:10px}			
+.pdright{ padding-right:10px}
+#pic_thumbnail, #event_thumbnail{ border:2px solid #CCC}
+#pic_thumbnail{ width:100px; height:100px; top:20px; right:28px}	
+#event_thumbnail{width:80px; height:80px; top:20px; right:28px}
+						
 .pass_barcode{
 	width:118px;
 	height:137px;
@@ -574,7 +579,7 @@ footer{
 	background:#FDB13B;
 	color:#2A4E56}
 
-.tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07{
+.tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07, .tip_coupon-08, .tip_coupon-09, .tip_coupon-10{
 	display:block;
 	position:absolute;
 	z-index:999;
@@ -599,7 +604,10 @@ footer{
 	-webkit-border-radius:15px}
 .tip_coupon-05{	top:205px; left:610px; width:100px; height:60px}
 .tip_coupon-06{	top:205px; left:710px; width:210px; height:60px}
-.tip_coupon-07{	top:103px; left:610px; width:180px; height:100px}	
+.tip_coupon-07{	top:103px; left:610px; width:180px; height:100px}
+.tip_coupon-08{	top:103px; left:610px; width:200px; height:40px}	
+.tip_coupon-09{	top:147px; left:610px; width:200px; height:40px}	
+.tip_coupon-10{	top:190px; left:610px; width:312px; height:75px}		
 
 #screenshot{
 	display:none;
