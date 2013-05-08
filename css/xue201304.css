@@ -795,7 +795,7 @@ footer{
 	font-size:0.813em;
 	line-height:18px;}
 .box_checked input{ margin-right:5px}
-a.btn_blue{
+a.btn_empty{
 	display:block;
 	width:90px;
 	height:29px;
@@ -805,8 +805,8 @@ a.btn_blue{
 	text-align:center;
 	text-decoration:none;
 	text-shadow: 1px 0 1px #FFFFFF}
-.btn_blue:visited{color:#134b58; text-decoration:none}	
-.btn_blue:hover{
+.btn_empty:visited{color:#134b58; text-decoration:none}	
+.btn_empty:hover{
 	background:url(../images/btn_blue.png) 0 -36px no-repeat;
 	color:#134b58; 
 	text-decoration:none}
@@ -865,20 +865,27 @@ a.btn_blue{
 .layset-02{ float:left; margin:15px 0 15px 170px}
 .layset-03{ float:right ; margin:15px 170px 15px 0}
 
-.btn_creat{
+	
+.btn_creat, .btn_back, .btn_add{
 	display:block;
-	position:absolute;
-	width:87px;
 	height:23px;
-	background:url(../images/btn_created.png) no-repeat;
 	top:8px;
 	right:25px;
 	font-size:0.75em;
 	color:#134b58;
 	text-shadow: 1px 0 1px #FFFFFF;
 	padding-left:30px}
-.btn_creat:visited{color:#134b58; text-decoration:none}	
-.btn_creat:hover{ background:url(../images/btn_created.png) 0 -23px no-repeat; color:#134b58; text-decoration:none}
+.btn_creat{ position:absolute; width:87px; background:url(../images/btn_created.png) no-repeat}	
+.btn_creat:visited, .btn_back:visited, .btn_add:visited{color:#134b58; text-decoration:none}	
+.btn_creat:hover, .btn_back:hover, .btn_add:hover{ color:#134b58; text-decoration:none}
+.btn_creat:hover, .btn_add:hover{ background:url(../images/btn_created.png) 0 -23px no-repeat}
+.btn_back{ position:absolute; width:60px; background:url(../images/btn_created.png) 0 -46px no-repeat}
+.btn_back:hover{ background:url(../images/btn_created.png) 0 -69px no-repeat}
+.btn_add{
+	float:right;
+	width:87px;
+	background:url(../images/btn_created.png) no-repeat;
+	margin-top:12px}
 .brand_list{ margin-top:-16px;}
 .brand_list th{
 	background:#E4E3E3;
@@ -887,7 +894,7 @@ a.btn_blue{
 	font-size:0.813em;
 	color:#2B689E;
 	text-shadow: 1px 0 1px #FFFFFF}
-.brand_list tr{}
+.brand_list tr:hover{ background:#FFC}
 .brand_list td{
 	font-size:0.813em;
 	line-height:22px;
@@ -896,29 +903,44 @@ a.btn_blue{
 	vertical-align:middle;
 	border-bottom:1px solid #CCC;}
 .brand_list img{ height:30px}
-.user-toolbar{
-	display:block;
+.btn_edit, .btn_delete, .btn_copy{
+	display: inline-block;
 	width:20px;
 	height:20px;
-	text-indent:-9999px;
-	background:url(../images/btn_options.png) no-repeat;
-	margin:0 auto}
-.user-toolbar-options{ display:none}			
+	text-indent:-9999px}
+.btn_edit{ background:url(../images/btn_option.png) no-repeat}
+.btn_edit:hover{ background:url(../images/btn_option.png) -20px 0 no-repeat}
+.btn_delete{ background:url(../images/btn_option.png) 0 -20px no-repeat}
+.btn_delete:hover{ background:url(../images/btn_option.png) -20px -20px no-repeat}
+.btn_copy{ background:url(../images/btn_option.png) 0 -40px no-repeat}
+.btn_copy:hover{ background:url(../images/btn_option.png) -20px -40px no-repeat}				
 	
 /*頁碼*/
-.sabrosus { padding: 3px; margin: 3px; text-align: center}
-.sabrosus a {border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 2px; text-decoration: none}
-.sabrosus a:hover {border: #2b66a5 1px solid; color: #000; background-color: lightyellow}
-.pagination a:active {
-	border-right: #2b66a5 1px solid; border-top: #2b66a5 1px solid; border-left: #2b66a5 1px solid; color: #000; border-bottom: #2b66a5 1px solid; background-color: lightyellow
-}
-.sabrosus span.current {
-	border-right: navy 1px solid; padding-right: 5px; border-top: navy 1px solid; padding-left: 5px; font-weight: bold; padding-bottom: 2px; border-left: navy 1px solid; color: #fff; margin-right: 2px; padding-top: 2px; border-bottom: navy 1px solid; background-color: #2e6ab1
-}
-.sabrosus span.disabled {
-	border-right: #929292 1px solid; padding-right: 5px; border-top: #929292 1px solid; padding-left: 5px; padding-bottom: 2px; border-left: #929292 1px solid; color: #929292; margin-right: 2px; padding-top: 2px; border-bottom: #929292 1px solid
-}
+.sabrosus{padding: 3px; margin:15px 3px 3px; font-size:0.813em; text-align: center}
+.sabrosus a{border: #9aafe5 1px solid; padding:2px 5px; color: #2e6ab1; margin-right: 5px; text-decoration: none}
+.sabrosus a:hover{border: #2b66a5 1px solid; color:#fff; background-color: #FF9A35}
+.pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
+.sabrosus span.current{border: navy 1px solid; padding:2px 5px; font-weight: bold; color: #fff; margin-right: 5px; background-color: #2e6ab1}
+.sabrosus span.disabled{border: #929292 1px solid; padding:2px 5px; color: #929292; margin-right: 5px}
 
+.textarea_04{
+	font-size:0.813em;
+	padding:5px 10px;
+	border:1px solid #a7a7a7;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+.pic_brand{ float:left; height:30px; margin-right:15px; vertical-align:middle}
+#Shop_list{ display:block; padding-top:15px}	
+#member_box h6{
+	display:block;
+	float:left;
+	width:200px;
+	font-size:1em;
+	padding:15px 0 10px 15px;
+	color:#26AED0}
+.ppl{ padding-left:24px}
+.ppt{ margin-bottom:15px}	
 
 /* 5.票卡管理  
 -----------------------------------------------------------------------------------------------

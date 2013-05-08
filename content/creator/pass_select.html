@@ -67,23 +67,23 @@
              <ul>
                 <li class="spac-right">
                    <img src="../../images/pass_coupan.jpg" width="167" height="216" alt="pass_coupan">
-                   <a href="edit_coupon.html" title="select coupan" class="btn_select">Select</a>
+                   <a href="#box_created-01" class="btn_select fancybox">Select</a>
                 </li>
                 <li class="spac-right">
                    <img src="../../images/pass_event.jpg" width="167" height="216" alt="pass_event">
-                   <a href="edit_event.html" title="select event" class="btn_select">Select</a>
+                   <a href="#box_created-02" class="btn_select fancybox">Select</a>
                 </li>
                 <li class="spac-right">
                    <img src="../../images/pass_store.jpg" width="167" height="216" alt="pass_store">
-                   <a href="edit_store.html" title="select store" class="btn_select">Select</a>
+                   <a href="#box_created-03" class="btn_select fancybox">Select</a>
                 </li>
                 <li class="spac-right">
                    <img src="../../images/pass_generic.jpg" width="167" height="216" alt="pass_generic">
-                   <a href="edit_generic.html" title="select generic" class="btn_select">Select</a>
+                   <a href="#box_created-04" class="btn_select fancybox">Select</a>
                 </li>
                 <li>
                    <img src="../../images/pass_boarding.jpg" width="167" height="216" alt="pass_boarding">
-                   <a href="edit_boarding.html" title="select boarding" class="btn_select">Select</a>
+                   <a href="#box_created-05" class="btn_select fancybox">Select</a>
                 </li>
              </ul>
              <br class="clean" />
@@ -146,6 +146,73 @@
              <br class="clean" />
           </div>
        </section>
+       
+       <!-- 粉絲團選擇頁 -->
+       <div id="box_created-01" class="box_light">
+	        <h3>Created to:</h3>
+	        <div class="mylightbox">
+                <h4>FB Fanspage</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPage 03</option>
+                    </select>
+                </div>
+                <a href="edit_coupon.html" class="btn_blue" title="Created pass">Created</a>
+          </div>
+          <div id="box_created-02" class="box_light">
+	        <h3>Created to:</h3>
+	        <div class="mylightbox">
+                <h4>FB Fanspage</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPage 03</option>
+                    </select>
+                </div>
+                <a href="edit_event.html" class="btn_blue" title="Created pass">Created</a>
+          </div>
+          <div id="box_created-03" class="box_light">
+	        <h3>Created to:</h3>
+	        <div class="mylightbox">
+                <h4>FB Fanspage</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPage 03</option>
+                    </select>
+                </div>
+                <a href="edit_store.html" class="btn_blue" title="Created pass">Created</a>
+          </div>
+          <div id="box_created-04" class="box_light">
+	        <h3>Created to:</h3>
+	        <div class="mylightbox">
+                <h4>FB Fanspage</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPage 03</option>
+                    </select>
+                </div>
+                <a href="edit_generic.html" class="btn_blue" title="Created pass">Created</a>
+          </div>
+          <div id="box_created-05" class="box_light">
+	        <h3>Created to:</h3>
+	        <div class="mylightbox">
+                <h4>FB Fanspage</h4>
+                   <select name="myfbfans" class="textarea_03">
+                       <option selected>Please Select One</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPage 03</option>
+                    </select>
+                </div>
+                <a href="edit_boarding.html" class="btn_blue" title="Created pass">Created</a>
+          </div>
      <!-- InstanceEndEditable -->
      </div>
      
@@ -170,6 +237,16 @@
 </footer>
 
 <!-- InstanceBeginEditable name="scriptbox" -->
+<link href="../../css/jquery.fancybox.css" rel="stylesheet"/>
+<script src="../../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
+<script>
+	$(document).ready(function() {
+		$('.fancybox').fancybox();
+        $(".fancybox-effects-a").fancybox({
+			helpers:{
+			title:{type : 'outside'},
+			overlay:{speedOut : 0}  }  });  });
+</script>
 <script src="../../script/jquery.lazyload.js"></script>
 <script src="../../script/other_set.js"></script>
 <!-- InstanceEndEditable -->

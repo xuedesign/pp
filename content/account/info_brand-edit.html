@@ -67,10 +67,120 @@
             </div>
             <div class="box_editgroup">
                <h4>Brand</h4>
-               <a href="#" class="btn_creat" title="Created New">Created New</a>
-               
-            </div>
-         </div>
+               <a href="info_brand.html" class="btn_back" title="back">Back</a>
+               <ul>
+                  	<li>
+                       <h5>Name</h5>
+                       <input name="Brand name" type="text" class="textarea_04" value="Mcdonalds">
+                       <br class="clean" />
+                    </li>
+                  	<li>
+                       <h5>Logo</h5>
+                       <img src="../../images/pic_business-01.jpg" alt="*" class="pic_brand">
+                       <input name="brand logo" type="file">
+                    </li>
+                  	<li>
+                       <h5>Description</h5>
+                       <textarea name="Brand description" cols="" rows="3" class="textarea_04">i'm lovin' it是麥當勞的全新精神，這是ㄧ種盡興表現自己，享受生活其中的態度，從現在起只要誰說 i'm lovin' it，就表示他正熱愛、並享受此刻。</textarea>
+                       <br class="clean" />
+                    </li>
+                  	<li>
+                       <h5>Fanspage name</h5>
+                       <input name="Fanspage name" type="text" class="textarea_04" value="台灣麥當勞官方粉絲團">
+                       <br class="clean" />
+                    </li>
+                    <li>
+                       <h5>Fanspage url</h5>
+                       <input name="Fanspage url" type="text" class="textarea_04" value="https://www.facebook.com/mcdonalds.tw">
+                       <br class="clean" />
+                    </li>
+                  </ul>
+                  
+                  <div id="Shop_list">
+                    <h6>Shop list</h6>
+                    <a href="#shop_new" class="btn_add fancybox">Add shop</a>
+                    <br class="clean" /> 
+                  </div>  
+                  <table width="100%" class="brand_list" summary="brand list">
+                   <tr>
+                     <th>Description</th>
+                     <th>Address</th>
+                     <th>Options</th>
+                   </tr>
+                   <tr>
+                     <td>信義旗艦店</td>
+                     <td>台北市信義區忠孝東路五段289號</td>
+                     <td>
+                        <a href="#shop_edit" class="btn_edit fancybox">Edit</a>
+                        <a href="#" class="btn_delete" title="Delete">Delete</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>大安店</td>
+                     <td>台北市大安區忠孝東路四段73號</td>
+                     <td>
+                        <a href="#shop_edit" class="btn_edit fancybox">Edit</a>
+                        <a href="#" class="btn_delete" title="Delete">Delete</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>中山店</td>
+                     <td>台北市中山區林森北路413號</td>
+                     <td>
+                        <a href="#shop_edit" class="btn_edit fancybox">Edit</a>
+                        <a href="#" class="btn_delete" title="Delete">Delete</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>士林店</td>
+                     <td>台北市士林區中正路287號</td>
+                     <td>
+                        <a href="#shop_edit" class="btn_edit fancybox">Edit</a>
+                        <a href="#" class="btn_delete" title="Delete">Delete</a>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>中正店</td>
+                     <td>台北市中正區林森南路1號</td>
+                     <td>
+                        <a href="#shop_edit" class="btn_edit fancybox">Edit</a>
+                        <a href="#" class="btn_delete" title="Delete">Delete</a>
+                     </td>
+                   </tr>
+                 </table>
+                 
+                 <div class="sabrosus">
+                    <span class="current">1</span>
+                 </div>
+                  <a href="info_brand.html" class="btn_empty layset-03" title="Save">Save</a> 
+                  <a href="info_brand.html" class="btn_empty layset-02" title="Cancel">Cancel</a>
+             </div>
+          </div>
+          
+          <div id="shop_edit" class="box_light">
+	            <h3>Edit shop</h3>
+	            <div class="mylightbox">
+                   <h4>Description</h4>
+                   <input name="myemail" type="text" class="textarea_03 ppt" value="信義旗艦店">
+                   <br class="clean" />
+                   <h4 class="ppl">Address</h4>
+                   <input name="myemail" type="text" class="textarea_03" value="台北市信義區忠孝東路五段289號">
+                   <br class="clean" />
+                </div>
+                <a href="info_brand-edit.html" class="btn_blue">Save</a>
+          </div>
+          <div id="shop_new" class="box_light">
+	            <h3>Addition new shop</h3>
+	            <div class="mylightbox">
+                   <h4>Description</h4>
+                   <input name="myemail" type="text" class="textarea_03 ppt" value="" placeholder="Shop name">
+                   <br class="clean" />
+                   <h4 class="ppl">Address</h4>
+                   <input name="myemail" type="text" class="textarea_03" value="" placeholder="Shop address">
+                   <br class="clean" />
+                </div>
+                <a href="info_brand-edit.html" class="btn_blue">Addition</a>
+          </div>
       <!-- InstanceEndEditable -->
      </div>
      
@@ -95,14 +205,15 @@
 </footer>
 
 <!-- InstanceBeginEditable name="scriptbox" -->
-<link href="../../css/jquery.toolbars.css" rel="stylesheet"/>
-<link href="../../css/bootstrap.icons.css" rel="stylesheet"/>
-<script src="../../script/jquery.toolbar.js"></script>
+<link href="../../css/jquery.fancybox.css" rel="stylesheet"/>
+<script src="../../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
 <script>
-  $('.user-toolbar').toolbar({
-	content: '.user-toolbar-options',
-	position: 'top'
-});
+    $(document).ready(function() {
+	  $('.fancybox').fancybox();
+      $(".fancybox-effects-a").fancybox({
+		    helpers:{
+			title:{type : 'outside'},
+			overlay:{speedOut : 0}  }  });  });
 </script>
 <script src="../../script/other_set.js"></script>
 <!-- InstanceEndEditable -->

@@ -341,11 +341,11 @@
                    <h4>Facebook</h4>
                    <select name="myfbfans" class="textarea_03">
                        <option selected>Please Select One</option>
-                       <option>My Facebook Fans Club 01</option>
-                       <option>My Facebook Fans Club 02</option>
-                       <option>My Facebook Fans Club 03</option>
-                       <option>My Facebook Fans Club 04</option>
-                       <option>My Facebook Fans Club 05</option>
+                       <option>My Facebook FansPage 01</option>
+                       <option>My Facebook FansPage 02</option>
+                       <option>My Facebook FansPageb 03</option>
+                       <option>My Facebook FansPage 04</option>
+                       <option>My Facebook FansPage 05</option>
                    </select>
                    <p>Distnbute this Passbook pass to your fans of Facebook. The users must have an iPhone or iPod touch with passbook (ios6) to view this pass.</p>  
                 </div>
