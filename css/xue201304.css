@@ -887,22 +887,22 @@ a.btn_empty{
 	background:url(../images/btn_created.png) no-repeat;
 	margin-top:12px}
 .brand_list{ margin-top:-16px;}
-.brand_list th{
+.brand_list th, .shop_list th{
 	background:#E4E3E3;
 	padding:8px;
 	border:1px solid #FFF;
 	font-size:0.813em;
 	color:#2B689E;
 	text-shadow: 1px 0 1px #FFFFFF}
-.brand_list tr:hover{ background:#FFC}
-.brand_list td{
+.brand_list tr:hover, .shop_list tr:hover{ background:#FFC}
+.brand_list td, .shop_list td{
 	font-size:0.813em;
 	line-height:22px;
 	padding:8px; 
     text-align:center;
 	vertical-align:middle;
 	border-bottom:1px solid #CCC;}
-.brand_list img{ height:30px}
+.brand_list img, .shop_list img{ height:30px}
 .btn_edit, .btn_delete, .btn_copy{
 	display: inline-block;
 	width:20px;
@@ -931,7 +931,7 @@ a.btn_empty{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px}
 .pic_brand{ float:left; height:30px; margin-right:15px; vertical-align:middle}
-#Shop_list{ display:block; padding-top:15px}	
+#Shoplist_header{ display:block; padding-top:15px}	
 #member_box h6{
 	display:block;
 	float:left;
