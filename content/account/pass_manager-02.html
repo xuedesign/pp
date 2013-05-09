@@ -57,20 +57,239 @@
      
      <div id="mid_block">
      <!-- InstanceBeginEditable name="main_content" -->
-       <div style="display:block; width:962px; margin:0 auto">
-          <a><img src="../../images/pic_manager-03.png" alt="*" width="962" height="721" usemap="#Map">
-          <map name="Map">
-            <area shape="rect" coords="296,25,445,67" href="../creator/pass_select.html">
-            <area shape="rect" coords="747,337,882,379" href="../creator/edit_coupon.html">
-            <area shape="rect" coords="745,401,886,443" href="../creator/edit_coupon.html">
-            <area shape="rect" coords="745,465,886,506" href="../creator/edit_coupon.html">
-            <area shape="rect" coords="746,534,887,572" href="../creator/edit_coupon.html">
-            <area shape="rect" coords="746,603,886,641" href="../creator/edit_coupon.html">
-            <area shape="rect" coords="599,127,910,160" href="pass_manager-02.html">
-            <area shape="rect" coords="692,230,742,272" href="pass_manager-01.html">
-            <area shape="rect" coords="547,232,628,274" href="pass_manager.html">
-          </map>
-          </a>
+       <div id="pass_manager">
+          <h3>Pass manager</h3>
+          <div id="manager_top">
+            <div class="pass_total">
+              <ul>
+            	  <li>
+                     <h5 class="totalimg-01">Coupan</h5>
+                     <h6>15</h6>
+                  </li>
+            	  <li>
+                     <h5 class="totalimg-02">Event</h5>
+                     <h6>18</h6>
+                  </li>
+            	  <li>
+                     <h5 class="totalimg-03">Store</h5>
+                     <h6>23</h6>
+                  </li>
+            	  <li>
+                     <h5 class="totalimg-04">Generic</h5>
+                     <h6>7</h6>
+                  </li>
+            	  <li>
+                     <h5 class="totalimg-05">Boarding</h5>
+                     <h6>6</h6>
+                  </li>
+              </ul>
+            </div>
+            <div id="quick_search">
+               <h4 class="search_title">Quick search</h4>
+               <ul>
+               	<li>
+                  <h5>Brandname</h5>
+                   <select class="search_option">
+                     <option selected>Please select</option>
+                     <option>brand-01</option>
+                     <option>brand-02</option>
+                     <option>brand-03</option>
+                     <option>brand-04</option>
+                     <option>brand-05</option>
+                   </select>
+                </li>
+               	<li class="marl">
+                   <h5>Status</h5>
+                   <select class="search_option">
+                     <option selected>Please select</option>
+                     <option>marking</option>
+                     <option>issue</option>
+                     <option>close</option>
+                     <option>archive</option>
+                   </select> 
+                </li>
+               </ul>
+               <br class="clean" /> 
+               <a href="pass_manager-01.html" title="search" class="btn_search">search</a>
+            </div>
+            <br class="clean" />
+          </div>
+          
+          
+          <h4>Pass list</h4>
+          <ul class="pass_nav">
+            <li class="myradius-left wline"><a href="pass_manager.html" title="all">All</a></li>
+            <li class="wline tablein"><a href="pass_manager-02.html" title="coupan">Coupan</a></li>
+            <li class="wline"><a href="#" title="event">Event</a></li>
+            <li class="wline"><a href="#" title="store">Store</a></li>
+            <li class="wline"><a href="#" title="generic">Generic</a></li>
+            <li class="myradius-right"><a href="#" title="boarding">Boarding</a></li>
+          </ul>
+          <br class="clean" />
+          <table width="100%" class="shop_list" summary="pass list">
+             <tr class="myth">
+               <th>Pass type</th>
+               <th>File name</th>
+               <th>Brand</th>
+               <th>Publish date</th>
+               <th>Expiry date</th>
+               <th>Passes</th>
+               <th>Status</th>
+               <th>Options</th>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Coffee buy one get one free</td>
+               <td>Starbucks</td>
+               <td>2013/05/15</td>
+               <td>2013/05/31</td>
+               <td>1000</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Coffee buy one get one free</td>
+               <td>Starbucks</td>
+               <td>2013/06/02</td>
+               <td>2013/06/02</td>
+               <td>1</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>NFC seminars</td>
+               <td>QZ Tap Inc.</td>
+               <td>2013/05/25</td>
+               <td>2013/05/25</td>
+               <td>500</td>
+               <td>making</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Coffee buy one get one free</td>
+               <td>Starbucks</td>
+               <td>2013/05/15</td>
+               <td>2013/05/31</td>
+               <td>1000</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Discount shopping</td>
+               <td>SOGO market</td>
+               <td>2013/02/01</td>
+               <td>2013/02/14</td>
+               <td>300</td>
+               <td>close</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Member card</td>
+               <td>Fitness Center</td>
+               <td>2013/06/01</td>
+               <td>2013/12/31</td>
+               <td>2500</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Discount shopping</td>
+               <td>SOGO market</td>
+               <td>2013/02/01</td>
+               <td>2013/02/14</td>
+               <td>300</td>
+               <td>close</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>NFC seminars</td>
+               <td>QZ Tap Inc.</td>
+               <td>2013/05/25</td>
+               <td>2013/05/25</td>
+               <td>500</td>
+               <td>making</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Coffee buy one get one free</td>
+               <td>Starbucks</td>
+               <td>2013/05/15</td>
+               <td>2013/05/31</td>
+               <td>1000</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+             </tr>
+             <tr>
+               <td><img src="../../images/logo-sample_03.png" alt="*"></td>
+               <td>Coffee buy one get one free</td>
+               <td>Starbucks</td>
+               <td>2013/06/04</td>
+               <td>2013/06/04</td>
+               <td>1</td>
+               <td>issue</td>
+               <td>
+                  <a href="../creator/edit_coupon.html" class="btn_edit" title="Edit">Edit</a>
+                  <a href="../creator/edit_coupon.html" class="btn_copy" title="Copy">Copy</a>
+                  <a href="#" class="btn_delete" title="Delete">Delete</a>
+               </td>
+            </tr>
+         </table>
+         
+         <div class="sabrosus"><!-- span class="current"為目前頁面數 -->
+              <span class="disabled"> < </span>
+              <span class="current">1</span>
+              <a href="#?page=2">2</a>
+              <a href="#?page=3">3</a>
+              <a href="#?page=4">4</a>
+              <a href="#?page=5">5</a>
+              <a href="#?page=6">6</a>
+              <a href="#?page=7">7</a>
+              <a href="#?page=2"> > </a>
+          </div>
        </div>
      <!-- InstanceEndEditable -->
      </div>

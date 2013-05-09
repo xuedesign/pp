@@ -223,8 +223,8 @@ footer{
 /* 3. 票卡編輯 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#pass_about h3, .editop_left h3{ font-size:1.5em; font-weight:normal; color:#26aed0}
-#pass_about p, .editop_left p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
+#pass_about h3, .editop_left h3, #pass_manager h3, #pass_manager h4{ font-size:1.5em; font-weight:normal; color:#26aed0}
+#pass_about p, .editop_left p, #pass_manager p{ font-size:0.813em; line-height:22px; padding:15px 0 31px 20px}
 
 /*3.1 票卡選擇---------------------------*/
 .pass_select, .pass_scope{ display:block; margin:0 auto}
@@ -886,7 +886,7 @@ a.btn_empty{
 	width:87px;
 	background:url(../images/btn_created.png) no-repeat;
 	margin-top:12px}
-.brand_list{ margin-top:-16px;}
+.brand_list{margin-top:-16px}	
 .brand_list th, .shop_list th{
 	background:#E4E3E3;
 	padding:8px;
@@ -894,7 +894,7 @@ a.btn_empty{
 	font-size:0.813em;
 	color:#2B689E;
 	text-shadow: 1px 0 1px #FFFFFF}
-.brand_list tr:hover, .shop_list tr:hover{ background:#FFC}
+.brand_list tr:hover, .shop_list tr:hover, .my_table tr:hover{ background:#FFC}
 .brand_list td, .shop_list td{
 	font-size:0.813em;
 	line-height:22px;
@@ -944,4 +944,130 @@ a.btn_empty{
 
 /* 5.票卡管理  
 -----------------------------------------------------------------------------------------------
-===============================================================================================*/	
+===============================================================================================*/
+#pass_manager{ display:block; width:962px; margin:0 auto 15px auto}
+#pass_manager h4{ float:left; padding-top:5px}
+#manager_top{ display:block; width:962px; margin:15px 0 50px 0}
+.pass_total{
+	display:block;
+	float:left}
+.pass_total li{
+	display:block;
+	float:left;
+	width:100px;
+	height:150px;
+	margin-right:10px;
+	border:1px solid #a7a7a7;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}	
+.pass_total h5{
+	display:block;
+	width:55px;
+	height:71px;
+	margin:10px auto 8px auto;
+	text-indent:-9999px}
+.pass_total .totalimg-01{ background:url(../images/bg_passtotal.png) no-repeat}
+.pass_total .totalimg-02{ background:url(../images/bg_passtotal.png) -55px 0 no-repeat}
+.pass_total .totalimg-03{ background:url(../images/bg_passtotal.png) -110px 0 no-repeat}
+.pass_total .totalimg-04{ background:url(../images/bg_passtotal.png) -165px 0 no-repeat}
+.pass_total .totalimg-05{ background:url(../images/bg_passtotal.png) -220px 0 no-repeat}
+.pass_total h6{
+	display:block;
+	height:39px;
+	background:#EAE8E8;
+	font-size:2em;
+	color:#2B689E;
+	text-align:center;
+	text-shadow:0 2px 1px #FFFFFF;
+	padding-top:20px;
+	-webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;}		
+#quick_search{
+	display:block;
+	float:right;
+	width:390px;
+	height:150px;
+	border:1px solid #BDBDBD;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+#quick_search h4{
+	width:100%;
+	font-size:1em;
+	text-align:center;
+	color:#2B689E;
+	text-shadow: 0 1px 1px #FFFFFF;
+	background:#E4E3E3;
+	-webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px}
+#quick_search h5{ float:left; font-size:0.813em; margin:10px 10px 0 20px}
+#quick_search .search_option{ 
+    float:left;  
+	width:250px;
+	margin-top:10px; 
+	padding:2px 5px;
+	border:1px solid #a7a7a7;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+#quick_search .marl{ margin-left:36px}	
+#quick_search .btn_search{
+	display:block;
+	width:45px;
+	background:#09C;
+	font-size:0.813em;
+	text-align:center;
+	color:#FFF;
+	margin:10px auto ;
+	padding:2px 15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}	
+#quick_search .btn_search:hover{
+    text-decoration:none;
+	background:#FDB13B;
+	color:#2A4E56}
+
+.pass_nav{ 
+     display:block; 
+	 float:right;
+	 border:1px solid #3B8BD3;
+	 border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	margin-bottom:15px}
+.pass_nav li{ 
+     display:block; 
+	 float:left;
+	 width:60px;
+	 font-size:0.813em;
+	 text-align:center; 
+	 padding:3px 5px; 
+	 background:#26AED0}
+.pass_nav li:hover, .pass_nav .tablein{ background:#F93}
+.pass_nav a, .pass_nav a:visited {text-decoration:none; color:#fff; text-shadow: 1px 0 1px #566265}
+.pass_nav a:hover {text-decoration:none; color:#fff; text-shadow: 1px 0 1px #566265}
+.pass_nav .myradius-left{
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottmleft: 150px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px}
+.pass_nav .myradius-right{
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -moz-border-radius-bottmright: 150px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px}
+.pass_nav .wline{ border-right:1px solid #FFF}	
