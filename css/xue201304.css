@@ -233,15 +233,20 @@ footer{
 .pass_select li, .pass_scope li{ display:block; float:left}
 .pass_select li{width:167px}
 .spac-right{ padding-right:30px}
-.btn_select{
+a.btn_select{
 	display:block;
 	width:90px;
-	height:36px;
-	background:url(../images/btn_select.png) no-repeat;
+	height:29px;
+	background:url(../images/btn_blue.png) no-repeat;
 	margin:10px 0 25px 50px;
-	text-indent:-9999px;
-	cursor:pointer}
-.btn_select:hover{background:url(../images/btn_select.png) 0 -46px no-repeat;}
+	padding-top:7px;
+	cursor:pointer;
+	font-size:0.938em;	
+	color:#134b58;
+	text-align:center;
+	text-decoration:none;
+	text-shadow: 1px 0 1px #FFFFFF}
+a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; text-decoration:none}
 .pass_scope{
 	width:975px;
 	margin-bottom:40px;
@@ -536,17 +541,21 @@ footer{
 	top:80px;
 	left:11px;}	
 
-.btn_save, .btn_distribution{ 
+a.btn_save, a.btn_distribution{ 
     display:block; 
 	float:left; 
 	width:147px; 
-	height:36px; 
-	text-indent:-9999px; 
-	cursor:pointer}
-.btn_save{ background:url(../images/btn_savesend.png) no-repeat; margin-left:5px}
-.btn_save:hover{ background:url(../images/btn_savesend.png) 0 -36px no-repeat}
-.btn_distribution{ background:url(../images/btn_savesend.png) 0 -72px no-repeat; margin-left:15px}
-.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -108px no-repeat}
+	height:30px;
+	padding-top:6px; 
+	cursor:pointer;
+	background:url(../images/btn_savesend.png) no-repeat;
+	font-size:1em;	
+	color:#134b58;
+	text-align:center;
+	text-decoration:none;
+	text-shadow: 1px 0 1px #FFFFFF}
+a.btn_distribution{ margin-left:25px}	
+a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -36px no-repeat}
 
 .box_light{ 
     display:none; 
@@ -805,8 +814,8 @@ a.btn_empty{
 	text-align:center;
 	text-decoration:none;
 	text-shadow: 1px 0 1px #FFFFFF}
-.btn_empty:visited{color:#134b58; text-decoration:none}	
-.btn_empty:hover{
+a.btn_empty:visited{color:#134b58; text-decoration:none}	
+a.btn_empty:hover{
 	background:url(../images/btn_blue.png) 0 -36px no-repeat;
 	color:#134b58; 
 	text-decoration:none}
@@ -940,6 +949,7 @@ a.btn_empty{
 	padding:15px 0 10px 15px;
 	color:#26AED0}
 .ppl{ padding-left:24px}
+.ppl-02{ padding-left:35px}
 .ppt{ margin-bottom:15px}	
 
 /* 5.票卡管理  
@@ -1009,7 +1019,7 @@ a.btn_empty{
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px}
-#quick_search h5{ float:left; font-size:0.813em; margin:10px 10px 0 20px}
+#quick_search h5{ float:left; font-size:0.813em; margin:10px 10px 0 40px}
 #quick_search .search_option{ 
     float:left;  
 	width:250px;
@@ -1019,7 +1029,6 @@ a.btn_empty{
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px}
-#quick_search .marl{ margin-left:36px}	
 #quick_search .btn_search{
 	display:block;
 	width:45px;
@@ -1036,6 +1045,7 @@ a.btn_empty{
     text-decoration:none;
 	background:#FDB13B;
 	color:#2A4E56}
+#quick_search .marl{ margin-left:45px}
 
 .pass_nav{ 
      display:block; 
@@ -1048,10 +1058,11 @@ a.btn_empty{
 .pass_nav li{ 
      display:block; 
 	 float:left;
-	 width:60px;
+	 width:85px;
 	 font-size:0.813em;
+	 line-height:25px;
 	 text-align:center; 
-	 padding:3px 5px; 
+	 padding:5px 5px 3px; 
 	 background:#26AED0}
 .pass_nav li:hover, .pass_nav .tablein{ background:#F93}
 .pass_nav a, .pass_nav a:visited {text-decoration:none; color:#fff; text-shadow: 1px 0 1px #566265}
@@ -1070,4 +1081,28 @@ a.btn_empty{
     -moz-border-radius-bottmright: 150px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px}
-.pass_nav .wline{ border-right:1px solid #FFF}	
+.pass_nav .wline{ border-right:1px solid #FFF}
+.pass_nav .pasmall-00, .pass_nav .pasmall-01, .pass_nav .pasmall-02, .pass_nav .pasmall-03, .pass_nav .pasmall-04, .pass_nav .pasmall-05{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-right:5px;
+	vertical-align: text-bottom}
+.pass_nav .pasmall-01{ background:url(../images/bg_passnav.png) 0 -5px no-repeat}
+.pass_nav .pasmall-02{ background:url(../images/bg_passnav.png) 0 -30px no-repeat}
+.pass_nav .pasmall-03{ background:url(../images/bg_passnav.png) 0 -55px no-repeat}
+.pass_nav .pasmall-04{ background:url(../images/bg_passnav.png) 0 -80px no-repeat}
+.pass_nav .pasmall-05{ background:url(../images/bg_passnav.png) 0 -105px no-repeat}
+#fb_box{ display:block; width:450px; height:290px; border:1px solid #E4E4E4}
+
+.btn_newest, .btn_oldest{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	background:url(../images/btn_timearray.png) no-repeat;
+	vertical-align:text-bottom}
+.btn_newest{ background-position: 0 0}
+.btn_oldest{ background-position: 0 -16px}
+.btn_newest:hover{ background-position: -16px 0}
+.btn_oldest:hover{ background-position: -16px -16px}

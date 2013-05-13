@@ -34,9 +34,9 @@
         <div id="top_right">
            <div id="top_login">
              <!-- 登入前狀態-->
-              <a href="join_us.html" title="Create New Accout" class="btn_addnew">Create New Accout</a> or
-              <a href="login.html" title="login" class="btn_login">Login</a>
-              <!--Hi! <a href="content/account/company_info.html" title="to my accout">QZ Tap</a>
+              <a href="info_member.html" title="Create New Accout" class="btn_addnew">Create New Accout</a> or
+              <a href="#" title="login" class="btn_login">Login</a>
+              <!--Hi! <a href="content/account/info_brand.html" title="to my accout">QZ Tap</a>
               <a href="../index.html" title="logout" class="btn_login">Logout</a>-->
            </div>
            <!-- InstanceBeginEditable name="main_nav" -->
@@ -45,7 +45,7 @@
                <li><a href="../profile/What_PassPac.html" title="What's PassPac" class="nav_01">What's PassPac</a></li>
                <li><a href="../creator/pass_select.html" title="Pass Creator" class="nav_02">Pass Creator</a></li>
                <li><a href="pass_manager.html" title="Pass Manager" class="nav_03">Pass Manager</a></li>
-               <li><a href="info_company.html" title="My Account" class="nav_04">My Account</a></li>
+               <li><a href="info_brand.html" title="My Account" class="nav_04">My Account</a></li>
                <li><a href="../mobile/app_info.html" title="Mobile APP" class="nav_05">Mobile APP</a></li>
                <li><a href="../deal/nfc_deal.html" title="NFC Deal" class="nav_06">NFC Deal</a></li>
              </ul>
@@ -119,9 +119,13 @@
             <div class="box_checked">
                <input name="checked" type="checkbox" value="">I've checked all the contents and agree to be bound by these Terms of <br />　　message.
             </div>
-            <a href="info_company.html" class="btn_empty layset-01" title="Next">Next</a> 
+            <a href="info_brand.html" class="btn_empty layset-01" title="Next">Next</a> 
         </div>
-     </form> 
+     </form>
+     
+     <div id="fb_login" >
+         <iframe id="fb_box" name="" width="450" height="290" border="0" frameborder="0" scrolling="no" src="fb_login.html"></iframe>
+	 </div> 
      <!-- InstanceEndEditable -->
      </div>
      
@@ -146,12 +150,27 @@
 </footer>
 
 <!-- InstanceBeginEditable name="scriptbox" -->
+<link href="../../css/jquery.fancybox.css" rel="stylesheet"/>
 <script src="../../script/tinyscrollbar.js"></script><!-- 視窗拉BAR -->
 <script><!-- 視窗拉BAR -->
 		$(document).ready(function(){
 			$('#scrollbar2').tinyscrollbar();	
 		});
-</script>		
+</script>
+<script src="../../script/jquery.fancybox.pack.js"></script><!-- Lightbox -->
+<script>
+    $(document).ready(function() {
+	  $('.fancybox').fancybox();
+      $(".fancybox-effects-a").fancybox({
+		    helpers:{
+			title:{type : 'outside'},
+			overlay:{speedOut : 0}  }  });  });
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+      $('#fb_login').fancybox().trigger('click');
+      $.fancybox.init(); });
+</script>	
 <script src="../../script/jquery.lazyload.js"></script>
 <script src="../../script/other_set.js"></script>
 <!-- InstanceEndEditable -->
