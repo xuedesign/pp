@@ -444,7 +444,9 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 .pass_mask-02{ background:url(../images/phoneframe-event.png) no-repeat}
 .pass_mask-03{ background:url(../images/phoneframe-generic.png) no-repeat}
 .pass_mask-04{ background:url(../images/phoneframe-boarding.png) no-repeat}
-.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode, .generic_primary, .event_primary{ display:block; position:absolute}
+
+.coupon_top, .coupon_primary, .coupon_secondary, .pass_barcode, .generic_primary, .event_primary, .boarding_primary, .boarding_secondary, .boarding_auxiliary{ 
+    display:block; position:absolute}
 .coupon_top{
 	width:282px;
 	/*height:40px;*/
@@ -456,14 +458,17 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 .coupon_logo, .coupon_top h5{display: block; float:left}
 .coupon_top img{ height:35px; padding-right:15px; vertical-align: sub}
 .coupon_top h5{ font-size:0.813em; line-height:35px}
-.coupon_primary, .generic_primary, .event_primary{
+.coupon_primary, .generic_primary, .event_primary, .boarding_primary{
 	width:312px;
 	height:125px;
-	top:80px;
+	/*top:80px;*/
 	left:4px;
 	overflow:hidden;
-	font-family:Verdana, Geneva, sans-serif}		
-.coupon_primary{text-shadow:1px 1px 3px #333333}	
+	font-family:Verdana, Geneva, sans-serif}
+.coupon_primary, .generic_primary, .event_primary{ top:80px}			
+.coupon_primary{text-shadow:1px 1px 3px #333333}
+.boarding_primary{ top:80px; text-align:center}	
+
 .coupon_primary h4, .coupon_primary p, .generic_primary h4, .generic_primary p, .event_primary h4, .event_primary h5, .event_primary p, #pic_thumbnail, #event_thumbnail{ 
     display:block; position:absolute; z-index:99}
 .coupon_primary h4{
@@ -494,23 +499,47 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 .event_primary h5{ top:45px; left:0 }
 .event_primary .secon_value{ top:65px; left:0 }		
 
-.coupon_secondary{
-	width:292px;
-	top:190px;
-	left:4px}
+.coupon_secondary{ width:292px; top:190px; left:4px}
+.boarding_auxiliary{ width:292px; top:165px; left:4px}
+.boarding_secondary{ width:292px; top:210px; left:4px}		
 .pdtop_01{padding:20px 10px 0}
-.pdtop_02{padding:4px 10px 0}	
-.coupon_secondary h5, .coupon_secondary p{ font-size:0.813em; line-height:18px}
-.coupon_secondary .secondary_01, .coupon_secondary .secondary_02, .coupon_secondary .secondary_03, .coupon_secondary .secondary_04{
+.pdtop_02{padding:4px 10px 0}
+.pdtop_03{padding:4px 10px 10px; text-align:center}	
+	
+.coupon_secondary h5, .coupon_secondary p, .boarding_auxiliary h5, .boarding_auxiliary p, .boarding_secondary h5, .boarding_secondary p{     font-size:0.813em; line-height:18px}
+
+.coupon_secondary .secondary_01, .coupon_secondary .secondary_02, .coupon_secondary .secondary_03, .coupon_secondary .secondary_04, .boarding_secondary .secondary_02, .boarding_auxiliary .secondary_02{
 	display:block; float:left; overflow:hidden}
+	
 .coupon_secondary .secondary_01{ width:136px; padding-right:10px}
-.coupon_secondary .secondary_02{ width:90px }
+.coupon_secondary .secondary_02, .boarding_secondary .secondary_02, .boarding_auxiliary .secondary_02{ width:90px }
 .coupon_secondary .secondary_03{ width:162px; padding-right:10px}
 .coupon_secondary .secondary_04{ width:110px}		
 .pdright{ padding-right:10px}
+
 #pic_thumbnail, #event_thumbnail{ border:2px solid #CCC}
 #pic_thumbnail{ width:100px; height:100px; top:20px; right:28px}	
 #event_thumbnail{width:80px; height:80px; top:20px; right:28px}
+
+.boarding_primary .primary_title{ display: block; float:left; width:121px; height:80px; overflow:hidden}
+.boarding_primary .place_name{ font-size:24px; font-weight:bold; line-height:24px}
+.boarding_primary .primary_title h4{ font-size:0.813em; padding:5px 0}
+.boarding_primary .transport_type{ display:block; float:left; width:50px; padding: 0 10px}
+.desc{ display:none}
+.transport-01, .transport-02, .transport-03, .transport-04, .transport-05{
+	display:block;
+	width:49px;
+	height:49px;
+	background:url(../images/bg_transport.png) no-repeat;
+	margin-top:18px;
+	text-indent:-9999px;
+	overflow:hidden}
+.transport-01{ background-position:0 0}
+.transport-02{ background-position:0 -49px}
+.transport-03{ background-position:0 -98px}
+.transport-04{ background-position:0 -147px}
+.transport-05{ background-position:0 -196px}		
+
 						
 .pass_barcode{
 	width:118px;
@@ -539,7 +568,7 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 	height:11px; 
 	background:url(../images/bg_line.png) no-repeat;
 	top:80px;
-	left:11px;}	
+	left:11px}	
 
 a.btn_save, a.btn_distribution{ 
     display:block; 
@@ -592,7 +621,7 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 	background:#FDB13B;
 	color:#2A4E56}
 
-.tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07, .tip_coupon-08, .tip_coupon-09, .tip_coupon-10{
+.tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07, .tip_coupon-08, .tip_coupon-09, .tip_coupon-10, .tip_coupon-11, .tip_coupon-12{
 	display:block;
 	position:absolute;
 	z-index:999;
@@ -620,7 +649,9 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 .tip_coupon-07{	top:103px; left:610px; width:180px; height:100px}
 .tip_coupon-08{	top:103px; left:610px; width:200px; height:40px}	
 .tip_coupon-09{	top:147px; left:610px; width:200px; height:40px}	
-.tip_coupon-10{	top:190px; left:610px; width:312px; height:75px}		
+.tip_coupon-10{	top:190px; left:610px; width:312px; height:75px}
+.tip_coupon-11{	top:80px; left:610px; width:312px; height:85px}
+.tip_coupon-12{	top:160px; left:610px; width:312px; height:50px}		
 
 #screenshot{
 	display:none;
