@@ -900,7 +900,7 @@ a.btn_empty:hover{
     -moz-border-radius-topright: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;}	
-.box_editgroup h5{ width:140px}
+.box_editgroup h5{ width:140px; font-size:0.875em}
 .box_editgroup li{ padding:15px 0; border-bottom:1px dashed #ccc}
 .layset-02{ float:left; margin:15px 0 15px 170px}
 .layset-03{ float:right ; margin:15px 170px 15px 0}
