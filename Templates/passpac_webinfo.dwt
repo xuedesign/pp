@@ -12,7 +12,7 @@
 <!-- TemplateEndEditable -->
 <link href="../css/reset.css" rel="stylesheet">
 <link href="../css/xue201304.css" rel="stylesheet"/>
-<link href="../css/passet.css" rel="stylesheet"/>
+<link href="../css/passinfo.css" rel="stylesheet"/>
 <script src="../script/jquery.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,11 +34,11 @@
         <h2>NFC for SmartPhone</h2>
         <div id="top_right">
            <div id="top_login">
-             <!-- 登入前狀態
+             <!-- 登入前狀態-->
               <a href="../content/account/info_member.html" title="Create New Accout" class="btn_addnew">Create New Accout</a> or
-              <a href="#" title="login" class="btn_login">Login</a>-->
-              Hi! <a href="../content/account/info_brand.html" title="to my accout">QZ Tap</a>
-              <a href="../index.html" title="logout" class="btn_login">Logout</a>
+              <a href="#" title="login" class="btn_login">Login</a>
+              <!--Hi! <a href="content/account/info_brand.html" title="to my accout">QZ Tap</a>
+              <a href="../index.html" title="logout" class="btn_login">Logout</a>-->
            </div>
            <!-- TemplateBeginEditable name="main_nav" -->
            <nav>

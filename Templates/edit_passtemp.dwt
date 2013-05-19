@@ -12,6 +12,7 @@
 <!-- TemplateEndEditable -->
 <link href="../css/reset.css" rel="stylesheet">
 <link href="../css/xue201304.css" rel="stylesheet"/>
+<link href="../css/passet.css" rel="stylesheet"/>
 <link href="../css/jquery.fancybox.css" rel="stylesheet"/>
 <link href="../css/tooltipster.css" rel="stylesheet"/>
 <script src="../script/jquery.min.js"></script>
