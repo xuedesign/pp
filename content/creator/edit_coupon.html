@@ -15,7 +15,9 @@
 <link href="../../css/passet.css" rel="stylesheet"/>
 <link href="../../css/jquery.fancybox.css" rel="stylesheet"/>
 <link href="../../css/tooltipster.css" rel="stylesheet"/>
+<link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
 <script src="../../script/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -382,8 +384,21 @@
              </div>   
           </div>
          <!-- InstanceEndEditable -->
-          <div id="box_send" class="box_light">
-	            <h3>Distribution</h3>
+          <div id="box_send" class="box_light-02">
+           <h3>Distribution</h3>
+           <div class="dete_set">
+              <h4>Start date</h4>
+                <input id="datepicker-01" name="startdate" type="text" class="textarea_03" placeholder="Select start date">
+                
+              <h4>Expiry date</h4>
+                <input id="datepicker-02" name="expirydate" type="text" class="textarea_03" placeholder="Select expiry date">
+                
+              <h4>Passes quantity</h4>
+                 <input name="quantity_set" type="radio" class="send_item" value="unlimited">Unlimited <br />
+                 <input name="quantity_set" type="radio" class="send_item" value="facebook">Limited <br />
+                 <input id="datepicker-02" name="expirydate" type="text" class="textarea_03" placeholder="Enter quantity">
+           </div>
+           <div class="distribu_set">
 	            <div class="mylightbox">
                    <input name="select_send" type="radio" class="send_item" value="email">
                    <h4>Email</h4>
@@ -403,7 +418,9 @@
                    </select>
                    <p>Distnbute this Passbook pass to your fans of Facebook. The users must have an iPhone or iPod touch with passbook (ios6) to view this pass.</p>  
                 </div>
-                <a href="#" class="btn_blue">Send</a>
+            </div>
+            <br class="clean" />    
+            <a href="#" class="btn_blue">Send</a>
           </div>
            
          <br class="clean" />   
@@ -433,7 +450,12 @@
 <!-- InstanceBeginEditable name="pass_scriptedit" -->
 <script src="../../script/passedit_coupon.js"></script><!-- 票卡編輯 -->
 <!-- InstanceEndEditable -->
-
+<script>
+   $(function() {
+    $( "#datepicker-01" ).datepicker();
+	$( "#datepicker-02" ).datepicker();
+   });
+</script>
 <script src="../../script/tinyscrollbar.js"></script><!-- 視窗拉BAR -->
 <script><!-- 視窗拉BAR -->
 		$(document).ready(function(){

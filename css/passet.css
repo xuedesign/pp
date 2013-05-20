@@ -9,6 +9,7 @@
 		3 票卡編輯
 		    3.1 票卡選擇
 			3.2 票卡編輯
+			3.3 發佈設定
 		4 會員編輯
 		    4.1 會員登入/新增會員
 			4.2 資料編修管理
@@ -382,41 +383,6 @@ a.btn_save, a.btn_distribution{
 a.btn_distribution{ margin-left:25px}	
 a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesend.png) 0 -36px no-repeat}
 
-.box_light{ 
-    display:none; 
-	width:400px; 
-	border:1px solid #09C;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px}
-.box_light h3{
-	display:block;
-	color:#FFF;
-	background:#09C;
-	padding:10px;
-	line-height:20px}	
-.mylightbox{ display:block; padding:15px 10px}
-.mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
-.mylightbox h4{ font-size:0.938em; line-height:32px}
-.mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
-.mylightbox .send_item{ margin-top:10px}
-.box_light a.btn_blue, .box_light a.btn_blue_02{
-	display:block;
-	background:#09C;
-	font-size:0.938em;
-	text-align:center;
-	color:#FFF;
-	padding:5px 15px;
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px}
-.box_light a.btn_blue{width:20%; margin:15px auto;}
-.box_light a.btn_blue_02{ width:35%; float:right; margin:20px 10px 15px}	
-.box_light a.btn_blue:hover, .box_light a.btn_blue_02:hover{
-	text-decoration:none;
-	background:#FDB13B;
-	color:#2A4E56}
-
 .tip_coupon-01, .tip_coupon-02, .tip_coupon-03, .tip_coupon-05, .tip_coupon-06, .tip_coupon-07, .tip_coupon-08, .tip_coupon-09, .tip_coupon-10, .tip_coupon-11, .tip_coupon-12{
 	display:block;
 	position:absolute;
@@ -528,6 +494,52 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 .back_content h5, .back_content_02 h5{ font-size:0.938em; letter-spacing:1px}
 .back_content p, .back_content_02 p{ font-size:0.813em; line-height:20px; padding-left:15px}
 .back_content span{ display:block; width:240px; border-bottom:1px solid #999; margin:10px auto}
+
+/*3.3 發佈設定---------------------------*/ 
+.dete_set{ 
+    display:block; 
+	float:left; 
+	width:235px; 
+	height:282px; 
+	margin:15px 0 0 25px; 
+	border-right:1px dashed #CDCDCD}
+.distribu_set{ display:block; float:right; width:365px}
+.box_light, .box_light-02{ 
+    display:none; 
+	border:1px solid #09C;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+.box_light{width:400px}
+.box_light-02{width:650px}	
+.box_light h3, .box_light-02 h3{
+	display:block;
+	color:#FFF;
+	background:#09C;
+	padding:10px;
+	line-height:20px}	
+.mylightbox{ display:block; padding:15px 10px}
+.mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
+.mylightbox h4, .dete_set h4{ font-size:0.938em; line-height:32px}
+.mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
+.mylightbox .send_item{ margin-top:10px}
+.dete_set .send_item{ margin:0 0 15px 10px}
+.box_light a.btn_blue, .box_light a.btn_blue_02, .box_light-02 a.btn_blue{
+	display:block;
+	background:#09C;
+	font-size:0.938em;
+	text-align:center;
+	color:#FFF;
+	padding:5px 15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px}
+.box_light a.btn_blue, .box_light-02 a.btn_blue{width:20%; margin:15px auto;}
+.box_light a.btn_blue_02{ width:35%; float:right; margin:20px 10px 15px}	
+.box_light a.btn_blue:hover, .box_light a.btn_blue_02:hover, .box_light-02 a.btn_blue:hover{
+	text-decoration:none;
+	background:#FDB13B;
+	color:#2A4E56}
 
 /* 4.會員編輯  
 -----------------------------------------------------------------------------------------------
