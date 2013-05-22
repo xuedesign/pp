@@ -23,7 +23,9 @@
 /* 6. O2O平台 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
+#about_box h4{ width:170px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
+#about_box h5{ font-size:0.938em; line-height:24px; font-weight:normal; padding-left:20px}
+#about_box p{ padding-left:20px}
 
 
 
@@ -37,16 +39,22 @@
 /* 8. NFC Deal 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
-
-
+#deal_box{}
+#deal_box h4{ line-height:25px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
+#deal_box .title_01{ width:440px}
+#deal_box .title_02{ width:220px}
+#deal_box h5{ font-size:0.938em;}
+#deal_box p{ padding-left:20px}
+#deal_box ol{ padding-left:20px}
+#deal_box ul{ padding-left:20px}
+#deal_box li{ font-size:1em; line-height:20px; padding-bottom:20px}
 
 /* 9. FAQ
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 #faqlist ol{ padding-bottom:30px}
 #faqlist li{ padding-bottom:20px}
-#faqlist h5, #contact_box h4{
+#faqlist h5, #contact_box h4, #about_box h4, #deal_box h4{
    display:block;
    background:#28B6D9;
    font-size:0.938em; 
@@ -78,9 +86,9 @@
 /* 10. 聯絡我們
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#contact_box{ display:block; width:695px; padding:0 15px 40px}
-#contact_box h4{ width:75px; padding:0 10px; margin-bottom:15px; letter-spacing:1px}
-#contact_box p{ font-size:0.813em; line-height:22px; padding-bottom:15px}
+#contact_box, #about_box{ display:block; width:695px; padding:0 15px 40px}
+#contact_box h4{ width:95px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
+#contact_box p, #about_box p, #deal_box p{ font-size:0.813em; line-height:22px; padding-bottom:15px}
 #contact_box .about_logo{ float:left; margin:0 15px 50px 15px}
 #contact_box .ppleft{ margin-left:15px}
 #contact_box ul{
