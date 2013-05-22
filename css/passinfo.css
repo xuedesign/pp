@@ -86,7 +86,7 @@
 /* 10. 聯絡我們
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#contact_box, #about_box{ display:block; width:695px; padding:0 15px 40px}
+#contact_box, #about_box, #info_box{ display:block; width:695px; padding:0 15px 40px}
 #contact_box h4{ width:95px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
 #contact_box p, #about_box p, #deal_box p{ font-size:0.813em; line-height:22px; padding-bottom:15px}
 #contact_box .about_logo{ float:left; margin:0 15px 50px 15px}
@@ -135,4 +135,9 @@ a.btn_empty:hover{
 /* 11. 其餘說明頁
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
+#info_box{}
+#info_box h4{ font-size:1em; line-height:25px; color:#28B6D9; padding:15px 0 0 0}
+#info_box p{ font-size:0.813em; line-height:22px; padding:5px 0 0 30px}
+#info_box ol{ padding-left:50px}
+#info_box ol li{ font-size:0.813em; line-height:22px; list-style:decimal; padding:5px 0}
+#info_box ol li li{ font-size:1em; list-style:none}

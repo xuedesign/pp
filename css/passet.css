@@ -490,10 +490,16 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px}	
-.back_content_02{ width:440px}	
+.back_content_02{ width:420px}	
 .back_content h5, .back_content_02 h5{ font-size:0.938em; letter-spacing:1px}
-.back_content p, .back_content_02 p{ font-size:0.813em; line-height:20px; padding-left:15px}
+.back_content p{ font-size:0.813em; line-height:22px; padding-left:15px}
 .back_content span{ display:block; width:240px; border-bottom:1px solid #999; margin:10px auto}
+.back_content_02 h6{ font-size:0.938em; line-height:25px; color:#26AED0}
+#member_first .back_content_02 p{ font-size:0.813em; line-height:22px; padding:5px 0 10px 15px; margin:0}
+.back_content_02 ol{ width:360px; padding:0 30px 0 30px}
+.back_content_02 ol li{ font-size:0.813em; line-height:22px; list-style:decimal; padding:5px 0}
+.back_content_02 ol ol{ padding:0 0 0 15px}
+.back_content_02 ol li li{ font-size:1em; list-style:none}
 
 /*3.3 發佈設定---------------------------*/ 
 .dete_set{ 
