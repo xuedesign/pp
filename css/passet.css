@@ -509,6 +509,7 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 	height:282px; 
 	margin:15px 0 0 25px; 
 	border-right:1px dashed #CDCDCD}
+.dete_set input{ margin-bottom:10px}	
 .distribu_set{ display:block; float:right; width:365px}
 .box_light, .box_light-02{ 
     display:none; 
