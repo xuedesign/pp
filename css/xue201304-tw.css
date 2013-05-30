@@ -23,7 +23,7 @@ body{
 	margin: 0;
 	padding:0;
 	background: url(../images/bg_website.png) repeat-x;
-	font-family: Verdana, Geneva, sans-serif/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/;
+	font-family: "微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU";
 	font-size:100%;
 	line-height:22px;
 	color:#434242}
@@ -68,21 +68,21 @@ header h2{ display:none}
 #top_login .btn_addnew:hover, #top_login .btn_login:hover, #top_login .btn_en:hover, #top_login .btn_ch:hover{ 
       background:#3074b1; text-decoration:none}
 #top_login span{ padding:0 5px}
-#top_right nav{ padding-top:18px;}
+#top_right nav{ padding:18px 0 0 102px;}
 #top_right nav li{ float:left;}
-#top_right nav li .nav_01, #top_right nav li .nav_02, #top_right nav li .nav_03, #top_right nav li .nav_04, #top_right nav li .nav_05, #top_right nav li .nav_06{ display: block; float:left; height:21px; text-indent:-9999px}
-#top_right nav li .nav_01{ width:142px; background:url(../images/bg_nav.png) no-repeat}
-#top_right nav li .nav_01:hover, #top_right nav li .nav_01.navin{ background:url(../images/bg_nav.png) 0 -21px no-repeat}
-#top_right nav li .nav_02{ width:121px; background:url(../images/bg_nav.png) 0 -42px no-repeat}
-#top_right nav li .nav_02:hover, #top_right nav li .nav_02.navin{ background:url(../images/bg_nav.png) 0 -63px no-repeat}
-#top_right nav li .nav_03{ width:133px; background:url(../images/bg_nav.png) 0 -84px no-repeat}
-#top_right nav li .nav_03:hover, #top_right nav li .nav_03.navin{ background:url(../images/bg_nav.png) 0 -105px no-repeat}
-#top_right nav li .nav_04{ width:118px; background:url(../images/bg_nav.png) 0 -126px no-repeat}
-#top_right nav li .nav_04:hover, #top_right nav li .nav_04.navin{ background:url(../images/bg_nav.png) 0 -147px no-repeat}
-#top_right nav li .nav_05{ width:109px; background:url(../images/bg_nav.png) 0 -168px no-repeat}
-#top_right nav li .nav_05:hover, #top_right nav li .nav_05.navin{ background:url(../images/bg_nav.png) 0 -189px no-repeat}
-#top_right nav li .nav_06{ width:96px; background:url(../images/bg_nav.png) 0 -210px no-repeat}
-#top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav.png) 0 -231px no-repeat}
+#top_right nav li .nav_01, #top_right nav li .nav_02, #top_right nav li .nav_03, #top_right nav li .nav_04, #top_right nav li .nav_05, #top_right nav li .nav_06{ display: block; float:left; width:103px; height:21px; text-indent:-9999px}
+#top_right nav li .nav_01{ background:url(../images/bg_nav_tw.png) no-repeat}
+#top_right nav li .nav_01:hover, #top_right nav li .nav_01.navin{ background:url(../images/bg_nav_tw.png) 0 -21px no-repeat}
+#top_right nav li .nav_02{ background:url(../images/bg_nav_tw.png) 0 -42px no-repeat}
+#top_right nav li .nav_02:hover, #top_right nav li .nav_02.navin{ background:url(../images/bg_nav_tw.png) 0 -63px no-repeat}
+#top_right nav li .nav_03{ background:url(../images/bg_nav_tw.png) 0 -84px no-repeat}
+#top_right nav li .nav_03:hover, #top_right nav li .nav_03.navin{ background:url(../images/bg_nav_tw.png) 0 -105px no-repeat}
+#top_right nav li .nav_04{ background:url(../images/bg_nav_tw.png) 0 -126px no-repeat}
+#top_right nav li .nav_04:hover, #top_right nav li .nav_04.navin{ background:url(../images/bg_nav_tw.png) 0 -147px no-repeat}
+#top_right nav li .nav_05{ background:url(../images/bg_nav_tw.png) 0 -168px no-repeat}
+#top_right nav li .nav_05:hover, #top_right nav li .nav_05.navin{ background:url(../images/bg_nav_tw.png) 0 -189px no-repeat}
+#top_right nav li .nav_06{ background:url(../images/bg_nav_tw.png) 0 -210px no-repeat}
+#top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav_tw.png) 0 -231px no-repeat}
 
 /*2.2 Banner---------------------------*/
 #mid_block{ display:block; width:962px; padding:49px 16px 0 16px}
@@ -136,7 +136,7 @@ header h2{ display:none}
 	width:320px;
 	background: url(../images/pic_symbol.png) no-repeat;
 	padding-left:200px}
-.service_info h3, #partner_box h3{ font-size:1.375em; font-weight:normal; color:#3074b1}	
+.service_info h3, #partner_box h3{ font-size:1.375em; font-weight: bold; color:#3074b1}	
 .service_info h3{ padding:10px 0 15px 0}
 .service_info p{ font-size:0.75em; color:#8c8b8b; line-height:22px}
 .blog_list{
@@ -144,7 +144,7 @@ header h2{ display:none}
 	float:right;
 	width:252px;
 	background:url(../images/pic_skylock.png) 283px 75px no-repeat;
-	padding:48px 150px 0 40px;}
+	padding:48px 150px 20px 40px;}
 .blog_list li{
 	display:block;
 	font-size:0.813em;
@@ -155,7 +155,7 @@ header h2{ display:none}
 /*2.4 我們的夥伴---------------------------*/	
 #partner_box{padding-bottom:20px}
 #partner_box h3{ float:left; padding-left:15px}
-.usage_note{ display:block; float:right; width:752px; border-bottom:1px solid #c0c0c0}
+.usage_note{ display:block; float:right; width:850px; border-bottom:1px solid #c0c0c0}
 .usage_note li{ 
     float:right;
 	font-size:0.813em; 
