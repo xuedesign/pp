@@ -13,7 +13,8 @@
 			2.3 服務介紹
 			2.4 我們的夥伴
 			2.5 完美底部佈局
-			2.6 頁尾		
+			2.6 頁尾
+			2.7 錯誤訊息		
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -215,3 +216,32 @@ footer{
 .down_left a:hover{ text-decoration:underline; color:#F50}
 .down_right{ display:block; float:right}
 .down_right li{ float:left}
+
+/*2.7 錯誤訊息*/
+.error_box{ display:block; position:relative}
+.error_box h3{
+	font-size:1.5em; 
+	font-weight:normal; 
+	color:#26aed0;
+	padding-bottom:25px}
+.error_box p{ font-size:0.813em; line-height:22px; padding:5px 0}
+.error_box ul{ padding:15px 0 15px 25px}
+.error_box li{font-size:0.813em; line-height:22px; list-style: disc inside}
+.error_box a{ font-weight:bold}
+.error_box span{
+	display:block;
+	position:absolute;
+	top:105px;
+	right:50px;
+	width:134px;
+	height:141px;
+	background:url(../images/bg_error.png) no-repeat}
+.error_bg{
+	display:block;
+	width:900px;
+	margin:0 auto;
+	background:#EEE;
+	padding:30px 15px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;}
