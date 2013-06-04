@@ -19,13 +19,12 @@
 	font-weight:normal; 
 	color:#26aed0;
 	padding-bottom:25px}
-#web_info h5{ display:none}	
 
 /* 6. O2O平台 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 #about_box h4{ width:170px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
-#about_box h5{ font-size:0.938em; line-height:24px; font-weight:normal; padding-left:20px}
+#about_box h5{ display:none/*font-size:0.938em; line-height:24px; font-weight:normal; padding-left:20px*/}
 #about_box p{ padding-left:20px}
 #about_box img{ margin:5px 0 30px 20px}
 
