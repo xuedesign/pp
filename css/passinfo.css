@@ -14,7 +14,7 @@
 	   11 其餘說明頁	
 ***********************************************************************************************/
 #web_info{ display:block; width:725px; margin:0 auto}
-#web_info h3{
+#web_info h3, #app_info h3{
 	font-size:1.5em; 
 	font-weight:normal; 
 	color:#26aed0;
@@ -33,9 +33,65 @@
 /* 7. Mobile APP
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
+#app_info{ display:block; position:relative; width:900px; margin:0 auto}
+.phone_markup{
+	display:block;
+	position:absolute;
+	z-index:99;
+	float:left;
+	width:229px;
+	height:443px;
+	background: url(../images/mobile_markup.png) no-repeat}
+.useapp{
+	display:block;
+	float:right;
+	width:640px}
+.useapp p{ font-size:0.813em; line-height:24px}
+.useapp .padleft{ padding:10px 0 0 15px}	
+.useapp ul{	margin-top:20px}
+.useapp li a{
+	display:block;
+	float:left;
+	width:90px;
+	font-size:0.813em;
+	line-height:30px;
+	text-align: center;
+	border-top:1px solid #b8b8b8;
+	border-left:1px solid #b8b8b8;}
+.useapp li a:hover{ background:#29B9DD; color:#FFF; text-decoration:none; font-weight:bold}
+.useapp .start{
+	-webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;}			
+.useapp .end{
+	border-right:1px solid #b8b8b8;
+	-webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;}
+.tabs li.active a{ background:#29B9DD; color:#FFF; text-decoration:none; font-weight:bold}
+.tabs li.active a:hover {background:#29B9DD}	
 
-
-
+.main_info{
+	clear:both;
+	display:block;
+	width:596px;
+	height:290px;
+	border:1px solid #b8b8b8;
+	padding:20px}
+.appshot{
+	display:block;
+	position:absolute;
+	top:119px;
+	left:23px;
+	width:189px;
+	height:296px}
+.shot_01{ background:url(../images/appshot_01.jpg) no-repeat}
+.shot_02{ background:url(../images/appshot_02.jpg) no-repeat}	
+.shot_03{ background:url(../images/appshot_03.jpg) no-repeat}	
+.shot_04{ background:url(../images/appshot_04.jpg) no-repeat}	
+.shot_05{ background:url(../images/appshot_05.jpg) no-repeat}	
+.shot_06{ background:url(../images/appshot_06.jpg) no-repeat}	
+.shot_07{ background:url(../images/appshot_07.jpg) no-repeat}	
 
 /* 8. NFC Deal 
 -----------------------------------------------------------------------------------------------
