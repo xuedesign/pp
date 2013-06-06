@@ -75,7 +75,6 @@
 	clear:both;
 	display:block;
 	width:596px;
-	height:290px;
 	border:1px solid #b8b8b8;
 	padding:20px}
 .appshot{
@@ -92,6 +91,30 @@
 .shot_05{ background:url(../images/appshot_05.jpg) no-repeat}	
 .shot_06{ background:url(../images/appshot_06.jpg) no-repeat}	
 .shot_07{ background:url(../images/appshot_07.jpg) no-repeat}	
+
+.main_info p{ font-size:0.813em}
+.applogo, .appname{ display:block; float:left}
+.applogo img{ padding:0 20px 15px 0}
+.appname h4{ padding-top:15px}
+.appname h5{ font-size:0.813em; padding-top:5px}
+.appstore{ 
+    display:block; 
+	width:149px;
+	margin:20px 0 10px 220px}
+.main_info ol{ padding:0 20px}
+.main_info ol li{ 
+    list-style: decimal outside; 
+	font-size:0.813em; 
+	line-height:24px; 
+	border-bottom:1px dashed #CACACA;
+	margin-bottom:15px}
+.main_info ul{ padding-left:35px; margin-top:5px}	
+.main_info ol li li{ 
+    list-style: disc inside; 
+	font-size:1em; 
+	line-height:20px;
+	border-bottom: none;
+	margin-bottom:5px}	
 
 /* 8. NFC Deal 
 -----------------------------------------------------------------------------------------------
