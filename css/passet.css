@@ -286,7 +286,7 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 .generic_primary h4{ font-size:0.813em; top:0; left:0 }
 .generic_primary p{ font-size:1.25em; top:33px; left:0}
 .event_primary h4, .event_primary h5, .event_primary p{
-	width:160px; 
+	width:280px; 
 	padding-right:10px;
 	font-size:0.813em;
 	line-height:25px;
@@ -409,8 +409,8 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 .tip_coupon-05{	top:205px; left:610px; width:100px; height:60px}
 .tip_coupon-06{	top:205px; left:710px; width:210px; height:60px}
 .tip_coupon-07{	top:103px; left:610px; width:180px; height:100px}
-.tip_coupon-08{	top:103px; left:610px; width:200px; height:40px}	
-.tip_coupon-09{	top:147px; left:610px; width:200px; height:40px}	
+.tip_coupon-08{	top:103px; left:610px; width:312px; height:40px}	
+.tip_coupon-09{	top:147px; left:610px; width:312px; height:40px}	
 .tip_coupon-10{	top:190px; left:610px; width:312px; height:75px}
 .tip_coupon-11{	top:80px; left:610px; width:312px; height:85px}
 .tip_coupon-12{	top:160px; left:610px; width:312px; height:50px}		
