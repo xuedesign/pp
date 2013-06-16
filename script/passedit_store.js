@@ -91,6 +91,7 @@ $(function() {
         $("#logo-text").css("color", $(this).val());
 		$("#sec01-label").css("color", $(this).val());
 		$("#sec02-label").css("color", $(this).val());
+		$("#sec03-label").css("color", $(this).val());
     });
     
 	$("#color_value").change(function() {
@@ -98,6 +99,7 @@ $(function() {
 		$("#primary_label").css("color", $(this).val());
 		$("#sec01-value").css("color", $(this).val());
 		$("#sec02-value").css("color", $(this).val());
+		$("#sec03-value").css("color", $(this).val());
     });
 	
     $("#color_bg").change(function() {
