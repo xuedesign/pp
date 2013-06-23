@@ -167,7 +167,7 @@
 		            <li><a href="#tab4" class="tabicon_03" title="Edit Primary Fields">Edit Primary Fields</a></li>
 		            <li><a href="#tab5" class="tabicon_04" title="Edit Secondary Fields">Edit Secondary Fields</a></li>
                     <li><a href="#tab9" class="tabicon_09" title="Edit Secondary Fields">Edit Auxiliary Fields</a></li>
-		            <li><a href="#tab6" class="tabicon_05" title="Edit Barcode">Edit Barcode</a></li>
+		            <li><a href="#tab6" class="tabicon_05" title="Edit Barcode Text">Edit Barcode Text</a></li>
 		            <li><a href="#tab7" class="tabicon_06" title="Edit Back Fields">Edit Back Fields</a></li>
 	              <!-- InstanceEndEditable -->
 	           </ul>
@@ -205,7 +205,9 @@
 		                <h5>Upload Images</h5>
 		                <p>Upload your 2x sized images, and we'll create the 1x size and rename them for you.</p>
 		                <div class="input_value"> <span>Logo</span>
-		                  <input id="file_logo" type="file">
+                          <div class="picup">
+		                     <input id="file_logo" type="file"><a href="#" title="delete" class="btn_del">delete</a>
+                          </div>   
 		                  <a href="#" class="tooltip btn_help" title="<p><strong>Required Image.</strong> Logo images can either be a square or a horizontal rectangle.<br /><br />Square images are best if using logotext, and must be 100x100px.<br /><br />Rectangular images can be a max of 300x70px, but we recommend closer to 70x70px.</p>">Help</a> <br class="clean" />
 	                    </div>
 		                <div class="input_value"> <span>Logo-text</span>
@@ -336,14 +338,10 @@
                                         
                     <div id="tab6" class="tab_content">
 		              <div class="tip_coupon-03"></div>
-		              <h4>Edit Barcode</h4>
+		              <h4>Edit Barcode Text</h4>
 		              <div class="box_input">
 		                <h5>Barcode</h5>
-		                <p>Apple recommends using the PDF417 format for aesthetic reasons.</p>
-		                <div class="input_value"> <span>Value</span>
-		                  <textarea name="Barcode_Value" cols="" rows="" class="textarea_01"></textarea>
-		                  <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />
-	                    </div>
+		                <p>Add the under the barcode.</p>
 		                <div class="input_value"> <span>Alt Text</span>
 		                  <input id="input-altext" name="Barcode_Alt Text" type="text" class="textarea_01" value="PacTransport">
 		                  <a href="#" class="tooltip btn_help" title="<p>This message will be encoded into the barcode graphic.</p>">Help</a> <br class="clean" />

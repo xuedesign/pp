@@ -207,7 +207,7 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 	text-align:right; 
 	padding:10px 0 0 15px; 
 	font-weight:bold}
-.input_value{ margin-bottom:10px}
+.input_value{margin-bottom:10px}
 .box_input .textarea_01, .box_input .textarea_02, .textarea_03{
 	font-size:0.813em;
 	padding:5px 10px;
@@ -218,7 +218,7 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
 .box_input .textarea_01{ width:50%; margin:0 5px 0 10px;}
 .box_input .textarea_02{ width:45%; margin:0 5px 0 10px;}
 .textarea_03{ width:60%; margin-left:10px}			
-.box_input #file_logo, .box_input #file_Strip{width:54%; margin:0 5px 0 10px;}
+.picup{ display:inline-block; width:54%; margin:0 5px 0 10px}
 
 .btn_help{
 	display:inline-block;
@@ -952,3 +952,14 @@ a.btn_empty:hover{
 .btn_oldest{ background-position: 0 -16px}
 .btn_newest:hover{ background-position: -16px 0}
 .btn_oldest:hover{ background-position: -16px -16px}
+
+.btn_del{
+	display:inline-block;
+	float:right;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	background:url(../images/btn_del.png) no-repeat;
+	text-indent:-9999px;
+	margin-top:5px;}
+.btn_del:hover{background:url(../images/btn_del.png) 0 -16px no-repeat;}
