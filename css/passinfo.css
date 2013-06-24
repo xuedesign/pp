@@ -52,7 +52,8 @@
 .useapp li a{
 	display:block;
 	float:left;
-	width:90px;
+	/*width:90px;*/
+	width:126px;
 	font-size:0.813em;
 	line-height:30px;
 	text-align: center;
@@ -74,7 +75,7 @@
 .main_info{
 	clear:both;
 	display:block;
-	width:596px;
+	width:594px;
 	border:1px solid #b8b8b8;
 	padding:20px}
 .appshot{
@@ -90,7 +91,8 @@
 .shot_04{ background:url(../images/appshot_04.jpg) no-repeat}	
 .shot_05{ background:url(../images/appshot_05.jpg) no-repeat}	
 .shot_06{ background:url(../images/appshot_06.jpg) no-repeat}	
-.shot_07{ background:url(../images/appshot_07.jpg) no-repeat}	
+.shot_07{ background:url(../images/appshot_07.jpg) no-repeat}
+.shot_08{ background:url(../images/appshot_08.jpg) no-repeat}		
 
 .main_info p{ font-size:0.813em}
 .applogo, .appname{ display:block; float:left}
@@ -123,6 +125,7 @@
 #deal_box h4{ line-height:25px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
 #deal_box .title_01{ width:440px}
 #deal_box .title_02{ width:220px}
+#deal_box .title_03{ width:290px}
 #deal_box p{ padding-left:20px}
 #deal_box ul{ padding-left:20px}
 #deal_box img{ padding-bottom:40px}
@@ -152,15 +155,15 @@
 	position:relative;
 	width:757px;
 	height:350px;
-	background:url(../images/nfc_deal_03.jpg) no-repeat;
+	background:url(../images/nfc_deal_03-en.jpg) no-repeat;
 	margin-bottom:35px}
 .bg_marketing h5{ display:none}
 .program_info{
 	display:block;
 	position:absolute;
-	width:210px}
-.pinfo_left{ top:140px; left:25px}
-.pinfo_right{ top:140px; left:515px}		 
+	width:215px}
+.pinfo_left{ top:110px; left:25px}
+.pinfo_right{ top:110px; left:515px}		 
 
 /* 9. FAQ
 -----------------------------------------------------------------------------------------------
@@ -204,7 +207,7 @@
 #contact_box, #about_box, #info_box{ display:block; width:695px; padding:0 15px 40px}
 #contact_box h4{ width:95px; padding:0 10px; margin-bottom:15px; letter-spacing:1px; text-align:center}
 #contact_box p, #about_box p, #deal_box p{ font-size:0.813em; line-height:22px; padding-bottom:15px}
-#contact_box .about_logo{ float:left; margin:0 15px 50px 15px}
+#contact_box .about_logo{ float:left; margin:0 15px 20px 15px}
 #contact_box .ppleft{ margin-left:15px}
 #contact_box ul{
 	display:block;
