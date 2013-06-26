@@ -95,8 +95,7 @@ a.btn_select:hover{background:url(../images/btn_blue.png) 0 -36px no-repeat; tex
   -moz-border-radius:5px; 
   -webkit-border-radius:5px;
   text-align:center}
-.select_in h4{ width:65px}
-.select_other h4{ width:100px}
+.select_in h4, .select_other h4{ width:65px}
 .select_in a{ margin-left:8px}
 .select_other li{ float:left; margin-right:20px}
 .editop_right a.btn_pass-01, .editop_right a.btn_pass-02, .editop_right a.btn_pass-03, .editop_right a.btn_pass-04, 
