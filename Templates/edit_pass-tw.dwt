@@ -375,7 +375,7 @@
           
           
          <div id="box_send" class="box_light-02">
-           <h3>散佈票卡</h3>
+           <h3>散佈票劵</h3>
            <div class="dete_set">
               <h4>開始日期</h4>
                 <input id="datepicker-01" name="startdate" type="text" class="textarea_03" placeholder="請選擇日期">
@@ -391,7 +391,7 @@
                    <input name="select_send" type="radio" class="send_item" value="email">
                    <h4>Email</h4>
                    <input name="myemail" type="text" class="textarea_03" placeholder="Enter Your Email">
-                   <p>可寄送本張票卡給自己或指定某人，但收件者必須有已安裝Passbook (ios6)的iPhone 或 iPod裝置，才能檢視此票卡。</p> 
+                   <p>可寄送本張票劵給自己或指定某人，但收件者必須有已安裝Passbook (ios6)的iPhone 或 iPod裝置，才能檢視此票劵。</p> 
                 </div>
                 <div class="mylightbox">
                    <input name="select_send" type="radio" class="send_item" value="facebook">
@@ -404,7 +404,7 @@
                        <option>粉絲頁名稱_04</option>
                        <option>粉絲頁名稱_05</option>
                    </select>
-                   <p>可散佈票卡至Facebook粉絲頁中，但使用者必須有已安裝Passbook (ios6)的iPhone 或 iPod裝置，才能檢視此票卡。</p>  
+                   <p>可散佈票劵至Facebook粉絲頁中，但使用者必須有已安裝Passbook (ios6)的iPhone 或 iPod裝置，才能檢視此票劵。</p>  
                 </div>
             </div>
             <br class="clean" />    
