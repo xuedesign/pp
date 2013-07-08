@@ -527,6 +527,7 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 	line-height:20px}	
 .mylightbox{ display:block; padding:15px 10px}
 .mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
+.mylightbox .fbfn{ display:block; float:left; font-size:0.813em; line-height:22px; padding:5px 0 0 15px; color:#0099CC}
 .mylightbox h4, .dete_set h4{ font-size:0.938em; line-height:32px}
 .mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
 .mylightbox .send_item{ margin-top:10px}
