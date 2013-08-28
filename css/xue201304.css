@@ -56,6 +56,15 @@ header h1 a{
 header h2{ display:none}
 #top_right{	display:block; float:right; width:720px}	
 #top_login{ font-size:0.813em; text-align:right; color:#376585}
+#top_login .btn_login2{
+	display: inline-block;
+	text-align:left;
+	color:#FFF;
+	width:152px;
+	height:22px;
+	background:url(../images/btn_login.png) no-repeat;
+	padding-left:45px;}
+#top_login .btn_login2:hover{background:url(../images/btn_login.png) 0 -22px no-repeat; text-decoration:none}
 #top_login .btn_addnew, #top_login .btn_login, #top_login .btn_en, #top_login .btn_ch{
 	display: inline-block;
 	color:#FFF;
@@ -64,7 +73,7 @@ header h2{ display:none}
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px}
 #top_login .btn_addnew{ background:#f19092}
-#top_login .btn_login{ background:#93a084}
+#top_login .btn_login{ background:#29B9DD/*#93a084*/}
 #top_login .btn_en, #top_login .btn_ch{ background:#29B9DD}
 #top_login .btn_addnew:hover, #top_login .btn_login:hover, #top_login .btn_en:hover, #top_login .btn_ch:hover{ 
       background:#3074b1; text-decoration:none}
@@ -86,7 +95,7 @@ header h2{ display:none}
 #top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav.png) 0 -231px no-repeat}
 
 /*2.2 Banner---------------------------*/
-#mid_block{ display:block; width:962px; padding:49px 16px 0 16px}
+#mid_block{ display:block; width:962px; padding:49px 16px 0 16px; min-height:620px/*20130821改*/;}
 #bannerbox{ display:block; position:relative; width:869px; height:374px; margin:0 auto}
 #bannerbox h3{ display:none}
 #banner_btn{

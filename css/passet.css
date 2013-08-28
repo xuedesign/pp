@@ -512,42 +512,76 @@ a.btn_save:hover, a.btn_distribution:hover{ background:url(../images/btn_savesen
 .dete_set input{ margin-bottom:10px}	
 .distribu_set{ display:block; float:right; width:365px}
 .box_light, .box_light-02{ 
-    display:none; 
-	border:1px solid #09C;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px}
-.box_light{width:400px}
-.box_light-02{width:650px}	
+    display: none; 
+	border:1px solid #35424b;
+	border-radius:4px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:#FFF;
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5)}
+.box_light{	width:400px}
+.box_light-02{ width:650px}	
 .box_light h3, .box_light-02 h3{
 	display:block;
+	font-family:sans-serif;
+	font-size:0.813em;
 	color:#FFF;
 	background:#09C;
-	padding:10px;
+	border-bottom:1px solid #35424b;
+	-webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+	padding:10px 10px 10px 15px ;
+	margin-bottom:15px;
 	line-height:20px}	
-.mylightbox{ display:block; padding:15px 10px}
+.mylightbox{ display:block; padding:15px 10px 5px 15px}
 .mylightbox h4, .mylightbox input{ display:block; float:left; margin-right:5px}
 .mylightbox .fbfn{ display:block; float:left; font-size:0.813em; line-height:22px; padding:5px 0 0 15px; color:#0099CC}
-.mylightbox h4, .dete_set h4{ font-size:0.938em; line-height:32px}
-.mylightbox	p{ clear:both; font-size:0.813em; line-height:22px; padding-left:26px}
+.mylightbox h4, .dete_set h4{ font-family:sans-serif; font-size:0.813em; line-height:32px; font-weight:normal}
+.mylightbox	p{ clear:both; font-family:sans-serif; font-size:0.813em; line-height:22px; padding-right:10px}
 .mylightbox .send_item{ margin-top:10px}
 .dete_set .send_item{ margin:0 0 15px 10px}
 .box_light a.btn_blue, .box_light a.btn_blue_02, .box_light-02 a.btn_blue{
 	display:block;
-	background:#09C;
-	font-size:0.938em;
+	background: #fff;
+    background:-webkit-linear-gradient(top, #fff, #F4F5F8);
+    background:-moz-linear-gradient(top, #fff, #F4F5F8);
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#fff', endColorstr='#F4F5F8');
+	font-size:0.75em;
+	font-weight:bold;
 	text-align:center;
-	color:#FFF;
+	color:#434c69;
 	padding:5px 15px;
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px}
+	border:1px solid #7991A8 /*#ccc*/;
+	border-radius:5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3)}
 .box_light a.btn_blue, .box_light-02 a.btn_blue{width:20%; margin:15px auto;}
 .box_light a.btn_blue_02{ width:35%; float:right; margin:20px 10px 15px}	
 .box_light a.btn_blue:hover, .box_light a.btn_blue_02:hover, .box_light-02 a.btn_blue:hover{
 	text-decoration:none;
-	background:#FDB13B;
-	color:#2A4E56}
+	background:#DCE2E9;
+	color:#47535C}
+.box_light a.ppl-03{ margin-top:50px}
+.bg_pop-01{ background:url(../images/bg_popup-01.png) repeat-x}
+.bg_pop-02{ background:url(../images/bg_popup-02.png) repeat-x}
+.bg_pop-03{ background:url(../images/bg_popup-03.png) repeat-x}
+.icon_info{
+	display:block;
+	float:left; 
+	width:35px;
+	height:37px;
+	background:url(../images/icon_info.png) no-repeat;
+	margin-right:15px}
+.box_light a.cleanup{ margin-top:35px}		
 
 /* 4.會員編輯  
 -----------------------------------------------------------------------------------------------
@@ -795,7 +829,7 @@ a.btn_empty:hover{
 	font-size:1em;
 	padding:15px 0 10px 15px;
 	color:#26AED0}
-.ppl{ padding-left:24px}
+.ppl{ padding-left:18px}
 .ppl-02{ padding-left:35px}
 .ppt{ margin-bottom:15px}	
 
