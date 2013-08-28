@@ -255,7 +255,8 @@ a.btn_empty:hover{
 ===============================================================================================*/
 #info_box{}
 #info_box h4{ font-size:1em; line-height:25px; color:#28B6D9; padding:15px 0 0 0}
-#info_box p{ font-size:0.813em; line-height:22px; padding:5px 0 0 30px}
+#info_box h5{ font-size:1em; line-height:25px; color:#28B6D9; padding-top:10px}
+#info_box p{ font-size:0.813em; line-height:22px; padding:10px 0 10px 30px}
 #info_box ol{ padding-left:50px}
 #info_box ol li{ font-size:0.813em; line-height:22px; list-style:decimal; padding:5px 0}
 #info_box ol li li{ font-size:1em; list-style:none}
