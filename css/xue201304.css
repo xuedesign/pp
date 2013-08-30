@@ -43,18 +43,18 @@ image{border:0}
 #wrap{display:block; width:994px; margin:0 auto}
 
 /*2.1 頁首---------------------------*/
-header{ display:block; width:962px; padding:20px 16px 0 16px;}
+header{ display:block; width:982px; padding:20px 6px 0 6px/*16px*/;}
 header h1 a{
 	display:block;
 	float:left;
 	background:url(../images/logo.png) no-repeat;
-	width:227px;
+	width:209px/*227px*/;
 	height:61px;
 	text-indent:-9999px;
 	margin-top:3px;
 	padding-left:15px;}
 header h2{ display:none}
-#top_right{	display:block; float:right; width:720px}	
+#top_right{	display:block; float:right; width:738px/*720px*/}	
 #top_login{ font-size:0.813em; text-align:right; color:#376585}
 #top_login .btn_login2{
 	display: inline-block;
@@ -91,7 +91,7 @@ header h2{ display:none}
 #top_right nav li .nav_04:hover, #top_right nav li .nav_04.navin{ background:url(../images/bg_nav.png) 0 -147px no-repeat}
 #top_right nav li .nav_05{ width:109px; background:url(../images/bg_nav.png) 0 -168px no-repeat}
 #top_right nav li .nav_05:hover, #top_right nav li .nav_05.navin{ background:url(../images/bg_nav.png) 0 -189px no-repeat}
-#top_right nav li .nav_06{ width:96px; background:url(../images/bg_nav.png) 0 -210px no-repeat}
+#top_right nav li .nav_06{ width:114px; background:url(../images/bg_nav.png) 0 -210px no-repeat}
 #top_right nav li .nav_06:hover, #top_right nav li .nav_06.navin{ background:url(../images/bg_nav.png) 0 -231px no-repeat}
 
 /*2.2 Banner---------------------------*/
@@ -165,7 +165,7 @@ header h2{ display:none}
 /*2.4 我們的夥伴---------------------------*/	
 #partner_box{padding-bottom:20px}
 #partner_box h3{ float:left; padding-left:15px}
-.usage_note{ display:block; float:right; width:752px; border-bottom:1px solid #c0c0c0}
+.usage_note{ display:block; float:right; width:752px; height:30px; border-bottom:1px solid #c0c0c0}
 .usage_note li{ 
     float:right;
 	font-size:0.813em; 
@@ -215,8 +215,8 @@ footer{
 	margin-top: -61px}
 #down_block{ 
     display:block; 
-	width:962px; 
-	padding:20px 16px 0 16px;
+	width:982px; 
+	padding:20px 6px 0 6px;
 	margin:0 auto; 
 	font-size:0.813em;
 	color:#656363}
