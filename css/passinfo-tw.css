@@ -224,7 +224,7 @@
     -moz-border-radius:10px;
     -webkit-border-radius:10px;}
 #contact_box li{ padding:10px 0 10px 25px}
-#contact_box li h5{ width:80px; font-size:0.813em; letter-spacing:1px; float:left}
+#contact_box li h5{ width:95px; font-size:0.813em; letter-spacing:1px; float:left; text-align:right}
 #contact_box .textarea_01{
 	width:70%; 
 	font-size:0.813em;
